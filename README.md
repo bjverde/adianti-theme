@@ -1,6 +1,11 @@
 # adianti-theme
 Temas para apresentação do [Adianti FrameWork 7.0](https://www.adianti.com.br/)
 
+
+* Theme3_v2 - melhorando acessabilidade e removendo dependencias externas.
+* Theme3_v3 - V2 + informações dinamicas configuradas no arquivo `application.ini`
+* Theme4_v2 - melhorando acessabilidade
+
 # Theme3_v2
 Tema baseado no theme3 do Adianti FrameWork 7.0, *que é diferente do theme 3 do Adianti Template 7.0*. Com as diferenças abaixo:
 
@@ -54,6 +59,7 @@ Editar o arquivo `<SISTEMA>/app/config/application.ini`
 version = 2.0.0
 head_title = Sistema de Exemplo
 logo-lg = Exemplo
+logo-link-class = SystemAboutView
 ```
 ### Etapa 02
 Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linhas abaixo:
@@ -80,6 +86,7 @@ $content     = str_replace('{head_title}', $head_title, $content);
 $content     = str_replace('{system_version}', $system_version, $content);
 $content     = str_replace('{logo-mini}', $ini['general']['application'], $content);
 $content     = str_replace('{logo-lg}', $ini['system']['logo-lg'], $content);
+$content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'], $content);
 ```
 
 
