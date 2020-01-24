@@ -28,8 +28,9 @@ Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linh
 É o mesmo tema que o theme4 com poucas diferenças
 
 * retirada do `maximum-scale=1, user-scalable=no` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom.
-* Inclusão dos arquivos das fontes MaterialIcons e source-code-pro assim não precisa de internet para baixar as fontes.
 
+## Para usar 
+Subistiua o arquivo `<SISTEMA>/app/templates/theme4` pelo arquivo que está na pasta `theme4_v2`.
 
 # Origem das fontes
 * MaterialIcons - https://github.com/google/material-design-icons/releases
