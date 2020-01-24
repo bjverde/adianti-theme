@@ -4,7 +4,7 @@ Temas para apresentação do [Adianti FrameWork 7.0](https://www.adianti.com.br/
 # Theme3_v2
 Tema baseado no theme3 do Adianti FrameWork 7.0, *que é diferente do theme 3 do Adianti Template 7.0*. Com as diferenças abaixo:
 
-* retirada do `maximum-scale=1, user-scalable=no` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom.
+* retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom.
 * Inclusão dos arquivos das fontes MaterialIcons e source-code-pro assim não precisa de internet para baixar as fontes.
 
 ## Para usar 
@@ -26,10 +26,10 @@ Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linh
 # Theme4_v2
 Tema baseado no theme4 do Adianti FrameWork 7.0, *que é diferente do theme 4 do Adianti Template 7.0*. Com as diferenças abaixo:
 
-* retirada do `maximum-scale=1, user-scalable=no` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom.
+* retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom.
 
 ## Para usar 
-Subistiua o arquivo `<SISTEMA>/app/templates/theme4` pelo arquivo que está na pasta `theme4_v2`.
+Subistiua o arquivo `<SISTEMA>/app/templates/theme4/layout.html` pelo arquivo que está na pasta `theme4_v2/layout.html`.
 
 
 # Theme3_v3
@@ -86,4 +86,4 @@ $content     = str_replace('{logo-lg}', $ini['system']['logo-lg'], $content);
 # Origem das fontes
 * MaterialIcons - https://github.com/google/material-design-icons/releases
 * source-code-pro - https://github.com/adobe-fonts/source-code-pro
-* Artigo do StackOverFlow que ajudou construir os temas - https://stackoverflow.com/questions/37270835/how-to-host-material-icons-offline
+* Artigo do StackOverFlow que ajudou corrigir os temas - https://stackoverflow.com/questions/37270835/how-to-host-material-icons-offline
