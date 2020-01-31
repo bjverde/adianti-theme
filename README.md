@@ -89,6 +89,12 @@ $content     = str_replace('{logo-lg}', $ini['system']['logo-lg'], $content);
 $content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'], $content);
 ```
 
+# Theme3_v4
+Tema baseado no theme3_v4 do Adianti FrameWork 7.1. Tem todas as melhorias e modificações do theme3_v3 com as inclusões:
+
+* Arquivo de `libraries.html` conforme Adianti 7.1
+* Arquivo 
+
 
 # Origem das fontes
 * MaterialIcons - https://github.com/google/material-design-icons/releases
