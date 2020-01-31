@@ -93,7 +93,7 @@ $content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'
 Tema baseado no theme3_v4 do Adianti FrameWork 7.1. Tem todas as melhorias e modificações do theme3_v3 com as inclusões:
 
 * Arquivo de `libraries.html` conforme Adianti 7.1
-* Arquivo 
+* Arquivo favicon.png
 
 
 # Origem das fontes
