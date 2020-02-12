@@ -4,6 +4,8 @@ Temas para apresentação do template [Adianti FrameWork 7.1](https://www.adiant
 # Theme3_v4
 Para Adianti FrameWork 7.1, *Quais são as diferenças do theme 3 do Adianti ?*. Veja abaixo:
 
+* retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom , o que aumenta acessebilidade para os usuários.
+* Inclusão dos arquivos das fontes MaterialIcons e source-code-pro assim não precisa de internet para baixar as fontes. 
 * Inclusão do nome do sistema de forma customizada no `application.ini`.
 * Inclusão da versão do sistema de forma customizada no `application.ini`.
 * Title do HEAD alterado conforme novos parametos `head_title` e `version` no `application.ini`
@@ -11,6 +13,13 @@ Para Adianti FrameWork 7.1, *Quais são as diferenças do theme 3 do Adianti ?*.
 
 Locais das alterações
 ![Theme3_v3](img/theme3_v3.png)
+
+
+## Origem das fontes MaterialIcons
+* MaterialIcons - https://github.com/google/material-design-icons/releases
+* source-code-pro - https://github.com/adobe-fonts/source-code-pro
+* Artigo do StackOverFlow que ajudou corrigir os temas - https://stackoverflow.com/questions/37270835/how-to-host-material-icons-offline
+
 
 ## Para usar 
 

@@ -7,10 +7,16 @@ Temas para apresentação do [Adianti FrameWork 7.0](https://www.adianti.com.br/
 * Theme4_v2 - melhorando acessabilidade
 
 # Theme3_v2
-Tema baseado no theme3 do Adianti FrameWork 7.0, *que é diferente do theme 3 do Adianti Template 7.0*. Com as diferenças abaixo:
+Tema baseado no theme3 do Adianti FrameWork 7.0. *Quais são as diferenças do theme 3 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
 
-* retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom.
+* retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom , o que aumenta acessebilidade para os usuários.
 * Inclusão dos arquivos das fontes MaterialIcons e source-code-pro assim não precisa de internet para baixar as fontes.
+
+## Origem das fontes MaterialIcons
+* MaterialIcons - https://github.com/google/material-design-icons/releases
+* source-code-pro - https://github.com/adobe-fonts/source-code-pro
+* Artigo do StackOverFlow que ajudou corrigir os temas - https://stackoverflow.com/questions/37270835/how-to-host-material-icons-offline
+
 
 ## Para usar 
 Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linhas abaixo. Depois altere no arquivo `<SISTEMA>/app/config/application.ini` informando o nome do Tema.
@@ -29,17 +35,18 @@ Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linh
 ```
 
 # Theme4_v2
-Tema baseado no theme4 do Adianti FrameWork 7.0, *que é diferente do theme 4 do Adianti Template 7.0*. Com as diferenças abaixo:
+Tema baseado no theme4 do Adianti FrameWork 7.0, *Quais são as diferenças do theme 4 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
 
-* retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom.
+* retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários.
 
 ## Para usar 
 Subistiua o arquivo `<SISTEMA>/app/templates/theme4/layout.html` pelo arquivo que está na pasta `theme4_v2/layout.html`.
 
 
 # Theme3_v3
-Tema baseado no theme3_v2 do Adianti FrameWork 7.0, *que é diferente do theme 3 do Adianti Template 7.0*. Com as diferenças abaixo:
+Tema baseado no theme3_v2 do Adianti FrameWork 7.0. *Quais são as diferenças do theme 3 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
 
+* Todos os itens do theme3_v2
 * Inclusão do nome do sistema de forma customizada no `application.ini`.
 * Inclusão da versão do sistema de forma customizada no `application.ini`.
 * Title do HEAD alterado conforme novos parametos `head_title` e `version` no `application.ini`.
@@ -94,9 +101,3 @@ Tema baseado no theme3_v4 do Adianti FrameWork 7.1. Tem todas as melhorias e mod
 
 * Arquivo de `libraries.html` conforme Adianti 7.1
 * Arquivo favicon.png
-
-
-# Origem das fontes
-* MaterialIcons - https://github.com/google/material-design-icons/releases
-* source-code-pro - https://github.com/adobe-fonts/source-code-pro
-* Artigo do StackOverFlow que ajudou corrigir os temas - https://stackoverflow.com/questions/37270835/how-to-host-material-icons-offline
