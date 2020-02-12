@@ -39,7 +39,7 @@ login-link = http://wwww.meusite.com.br
 ### Etapa 02
 Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linhas abaixo:
 ```php
-            case 'theme3_v3':
+            case 'theme3_v4':
                     ob_start();
                     $xml = new SimpleXMLElement(file_get_contents($file));
                     $menu = new TMenu($xml, null, 1, 'treeview-menu', 'treeview', '');
@@ -78,9 +78,14 @@ else
         $content = str_replace('{MENU}', $menu, $content);
 
         //Novas linhas para Theme3_v4
-    }
-    else
-    {
+        $system_version = $ini['system']['version'];
+        $head_title  = $ini['system']['head_title'].' - v'.$system_version;
+        $content     = str_replace('{head_title}', $head_title, $content);
+        $content     = str_replace('{system_version}', $system_version, $content);
+        $content     = str_replace('{logo-mini}', $ini['general']['application'], $content);
+        $content     = str_replace('{logo-lg}', $ini['system']['logo-lg'], $content);
+        $content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'], $content);
+    }else{
         $content = file_get_contents("app/templates/{$theme}/login.html");
 
         //Novas linhas para Theme3_v4
