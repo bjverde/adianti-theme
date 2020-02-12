@@ -2,14 +2,14 @@
 Temas para apresentação do template [Adianti FrameWork 7.1](https://www.adianti.com.br/)
 
 # Theme3_v4
-Para Adianti FrameWork 7.1, *Quais são as diferenças do theme 3 do Adianti ?*. Veja abaixo:
+Tema baseado no [theme3_v4](framework_puro.md#theme3_v4) para o FrameWork puro. *Quais são as diferenças do theme 3 do Adianti ?*. Veja abaixo:
 
 * retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom , o que aumenta acessebilidade para os usuários.
 * Inclusão dos arquivos das fontes MaterialIcons e source-code-pro assim não precisa de internet para baixar as fontes. 
 * Inclusão do nome do sistema de forma customizada no `application.ini`.
 * Inclusão da versão do sistema de forma customizada no `application.ini`.
 * Title do HEAD alterado conforme novos parametos `head_title` e `version` no `application.ini`
-* Arquivo favicon.png
+* Arquivo favicon.png no `/theme3_v4/img/favicon.png`
 
 Locais das alterações
 ![Theme3_v3](img/theme3_v3.png)
@@ -26,7 +26,7 @@ Locais das alterações
 ### Etapa 01 
 Editar o arquivo `<SISTEMA>/app/config/application.ini`
 
-1. Alterar para `theme = theme3_v3`
+1. Alterar para `theme = theme3_v4`
 1. incluindo as informações abaixo : 
 ```ini
 [system]

@@ -1,4 +1,4 @@
-# adianti-theme
+# Temas para o FremeWork Puro
 Temas para apresentação do [Adianti FrameWork 7.0](https://www.adianti.com.br/)
 
 
@@ -44,9 +44,9 @@ Subistiua o arquivo `<SISTEMA>/app/templates/theme4/layout.html` pelo arquivo qu
 
 
 # Theme3_v3
-Tema baseado no theme3_v2 do Adianti FrameWork 7.0. *Quais são as diferenças do theme 3 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
+Tema baseado no [theme3_v2](framework_puro.md#theme3_v2) para Adianti FrameWork 7.0. *Quais são as diferenças do theme 3 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
 
-* Todos os itens do theme3_v2
+* Todos os itens do [theme3_v2](framework_puro.md#theme3_v2)
 * Inclusão do nome do sistema de forma customizada no `application.ini`.
 * Inclusão da versão do sistema de forma customizada no `application.ini`.
 * Title do HEAD alterado conforme novos parametos `head_title` e `version` no `application.ini`.
@@ -97,7 +97,7 @@ $content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'
 ```
 
 # Theme3_v4
-Tema baseado no theme3_v4 do Adianti FrameWork 7.1. Tem todas as melhorias e modificações do theme3_v3 com as inclusões:
+Tema baseado no theme3 do Adianti FrameWork 7.1. Tem todas as melhorias e modificações do [theme3_v3](framework_puro.md#theme3_v3) com as inclusões:
 
 * Arquivo de `libraries.html` conforme Adianti 7.1
 * Arquivo favicon.png
