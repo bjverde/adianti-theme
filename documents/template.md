@@ -11,8 +11,15 @@ Tema baseado no [theme3_v4](framework_puro.md#theme3_v4) para o FrameWork puro. 
 * Title do HEAD alterado conforme novos parametos `head_title` e `version` no `application.ini`
 * Arquivo favicon.png no `/theme3_v4/img/favicon.png`
 
-Locais das alterações
-![Theme3_v3](img/theme3_v3.png)
+Alterações na tela de login
+![Theme3_v4_login](img/template_theme3_v3_login.png)
+
+Alterações nas telas publicas
+![Theme3_v4_public](img/template_theme3_v3_public.png)
+
+Alterações nas telas Principais
+![Theme3_v4_layout](img/template_theme3_v3_layout.png)
+
 
 
 ## Origem das fontes MaterialIcons
@@ -33,7 +40,7 @@ Editar o arquivo `<SISTEMA>/app/config/application.ini`
 version = 2.0.0
 head_title = Sistema de Exemplo
 logo-lg = Exemplo
-logo-link-class = SystemAboutView
+logo-link-class = index.php?class=SystemAboutView
 login-link = http://wwww.meusite.com.br
 ```
 ### Etapa 02
@@ -54,8 +61,7 @@ Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linh
 ### Etapa 03
 Edite o arquivo `<SISTEMA>/index.php` incluido as linhas abaixo:
 ```php
-if ( TSession::getValue('logged') )
-{
+if ( TSession::getValue('logged') ){
     $content = file_get_contents("app/templates/{$theme}/layout.html");
     $menu    = AdiantiMenuBuilder::parse('menu.xml', $theme);
     $content = str_replace('{MENU}', $menu, $content);
@@ -68,9 +74,7 @@ if ( TSession::getValue('logged') )
     $content     = str_replace('{logo-mini}', $ini['general']['application'], $content);
     $content     = str_replace('{logo-lg}', $ini['system']['logo-lg'], $content);
     $content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'], $content);
-}
-else
-{
+}else{
     if (isset($ini['general']['public_view']) && $ini['general']['public_view'] == '1')
     {
         $content = file_get_contents("app/templates/{$theme}/public.html");
