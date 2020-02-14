@@ -53,15 +53,16 @@ login-link = http://wwww.meusite.com.br
 Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linhas abaixo:
 ```php
             case 'theme3_v4':
-                    ob_start();
-                    $xml = new SimpleXMLElement(file_get_contents($file));
-                    $menu = new TMenu($xml, null, 1, 'treeview-menu', 'treeview', '');
-                    $menu->class = 'sidebar-menu';
-                    $menu->id    = 'side-menu';
-                    $menu->show();
-                    $menu_string = ob_get_clean();
-                    return $menu_string;
-                    break;  
+                ob_start();
+                $callback = array('SystemPermission', 'checkPermission');
+                $xml = new SimpleXMLElement(file_get_contents($file));
+                $menu = new TMenu($xml, $callback, 1, 'treeview-menu', 'treeview', '');
+                $menu->class = 'sidebar-menu';
+                $menu->id    = 'side-menu';
+                $menu->show();
+                $menu_string = ob_get_clean();
+                return $menu_string;
+            break;
 ```
 
 ### Etapa 03
