@@ -4,13 +4,16 @@ Temas para apresentação do template [Adianti FrameWork 7.1](https://www.adiant
 # Theme3_v4
 Tema baseado no [theme3_v4](framework_puro.md#theme3_v4) para o FrameWork puro. *Quais são as diferenças do theme 3 do Adianti ?*. Veja abaixo:
 
-* retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom , o que aumenta acessebilidade para os usuários.
-* Inclusão dos arquivos das fontes MaterialIcons e source-code-pro assim não precisa de internet para baixar as fontes. 
-* Inclusão do nome do sistema de forma customizada no `application.ini`.
-* Inclusão da versão do sistema de forma customizada no `application.ini`.
-* Title do HEAD alterado conforme novos parametos `head_title` e `version` no `application.ini`
-* Arquivo favicon.png no `/theme3_v4/img/favicon.png`
+1. retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom , o que aumenta acessebilidade para os usuários.
+1. Inclusão dos arquivos das fontes MaterialIcons e source-code-pro assim não precisa de internet para baixar as fontes. 
+1. Inclusão do nome do sistema de forma customizada no `application.ini`.
+1. Inclusão da versão do sistema de forma customizada no `application.ini`.
+1. Title do HEAD alterado conforme novos parametos `head_title` e `version` no `application.ini`
+1. Arquivo favicon.png no `/theme3_v4/img/favicon.png`
+1. Inclusão do link de login nas telas iniciais
 
+
+## Telas e suas alterações
 Alterações na tela de login
 ![Theme3_v4_login](img/template_theme3_v3_login.png)
 
@@ -19,6 +22,9 @@ Alterações nas telas publicas
 
 Alterações nas telas Principais
 ![Theme3_v4_layout](img/template_theme3_v3_layout.png)
+
+Mostrando o numero da versão, no rodape
+![template_theme3_v3_layout_rodape](img/template_theme3_v3_layout_rodape.png)
 
 
 
