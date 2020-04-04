@@ -4,7 +4,10 @@ Temas para apresentação do [Adianti FrameWork 7.0](https://www.adianti.com.br/
 
 * Theme3_v2 - melhorando acessabilidade e removendo dependencias externas.
 * Theme3_v3 - V2 + informações dinamicas configuradas no arquivo `application.ini`
-* Theme4_v2 - melhorando acessabilidade
+* [theme3_v4](framework_puro.md#theme3_v4)
+* [theme3_v5](framework_puro.md#theme3_v5)
+
+* Theme4_v2 - melhorando acessabilidades
 
 # Theme3_v2
 Tema baseado no theme3 do Adianti FrameWork 7.0. *Quais são as diferenças do theme 3 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
@@ -101,3 +104,8 @@ Tema baseado no theme3 do Adianti FrameWork 7.1. Tem todas as melhorias e modifi
 
 * Arquivo de `libraries.html` conforme Adianti 7.1
 * Arquivo favicon.png
+
+# Theme3_v5
+Tema baseado no theme3 do Adianti FrameWork 7.1. Tem todas as melhorias e modificações do [theme3_v4](framework_puro.md#theme3_v4) com as inclusões:
+
+* Arquivo de `layout.html` alterado removendo `layout-boxed` para ocupar toda area
