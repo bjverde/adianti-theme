@@ -7,7 +7,7 @@ Temas para apresentação do [Adianti FrameWork 7.0](https://www.adianti.com.br/
 * [theme3_v4](framework_puro.md#theme3_v4)
 * [theme3_v5](framework_puro.md#theme3_v5)
 
-* Theme4_v2 - melhorando acessabilidades
+* [theme4_v2](framework_puro.md#theme4_v2)
 
 # Theme3_v2
 Tema baseado no theme3 do Adianti FrameWork 7.0. *Quais são as diferenças do theme 3 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
@@ -36,15 +36,6 @@ Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linh
                     return $menu_string;
                     break;  
 ```
-
-# Theme4_v2
-Tema baseado no theme4 do Adianti FrameWork 7.0, *Quais são as diferenças do theme 4 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
-
-* retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários.
-
-## Para usar 
-Subistiua o arquivo `<SISTEMA>/app/templates/theme4/layout.html` pelo arquivo que está na pasta `theme4_v2/layout.html`.
-
 
 # Theme3_v3
 Tema baseado no [theme3_v2](framework_puro.md#theme3_v2) para Adianti FrameWork 7.0. *Quais são as diferenças do theme 3 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
@@ -109,3 +100,12 @@ Tema baseado no theme3 do Adianti FrameWork 7.1. Tem todas as melhorias e modifi
 Tema baseado no theme3 do Adianti FrameWork 7.1. Tem todas as melhorias e modificações do [theme3_v4](framework_puro.md#theme3_v4) com as inclusões:
 
 * Arquivo de `layout.html` alterado removendo `layout-boxed` para ocupar toda area
+
+
+# Theme4_v2
+Tema baseado no theme4 do Adianti FrameWork 7.0, *Quais são as diferenças do theme 4 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
+
+* retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários.
+
+## Para usar 
+Subistiua o arquivo `<SISTEMA>/app/templates/theme4/layout.html` pelo arquivo que está na pasta `theme4_v2/layout.html`.
