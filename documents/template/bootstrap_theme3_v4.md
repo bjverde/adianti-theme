@@ -1,5 +1,9 @@
 # Temas para o Template
-Temas para apresentação do template [Adianti FrameWork 7.1](https://www.adianti.com.br/)
+Temas para apresentação do template [Adianti FrameWork 7.1](https://www.adianti.com.br/) baseado na aparecem padrão d BootStrap
+
+* [<- voltar para lista de temas BootStrap](../template.md)
+* [<- voltar para index](../../README.md)
+
 
 # Theme3_v4
 Tema baseado no [theme3_v4](framework_puro.md#theme3_v4) para o FrameWork puro. *Quais são as diferenças do theme 3 do Adianti ?*. Veja abaixo:
