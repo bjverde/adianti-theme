@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adianti Template III</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link href="manifest.json?appver=700" rel="manifest">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="app/images/icon.png" rel="apple-touch-icon" sizes="180x180">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+
+    {LIBRARIES}
+    {HEAD}
+
+    <script src="app/lib/include/admin-all.min.js?appver=700" type="text/javascript"></script>
+    <link href="app/lib/include/admin.min.css?appver=700" media="screen" rel="stylesheet" type="text/css">
+
+    <link href="app/templates/{template}/css/AdminLTE.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="app/templates/{template}/css/skins/_all-skins.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <header class="main-header">
+        <!-- Logo -->
+        <a class="logo" href="http://www.adianti.com.br/framework" target="newwindow">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>AT</b>3</span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>Adianti</b>Template III</span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a class="sidebar-toggle" data-toggle="offcanvas" href="#" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a class="dropdown-toggle" data-toggle="dropdown" generator="adianti"
+                           href="index.php?class=LoginForm" title="Login">
+                            <i class="fa fa-user"></i>
+                            <span class="hidden-xs">{username}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar user panel -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <!-- <i class="fa fa-user fa-2x" style="color:white"></i> -->
+                    <i aria-hidden="true" class="fa fa-university white fa-2x"></i>
+                    <span class="white">System name</span>
+                </div>
+                <div class="pull-left info" style="position:initial">
+                    <br>
+                    <p>{username}</p>
+                </div>
+            </div>
+            <!-- search form -->
+            <!-- /.search form -->
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="header">MAIN NAVIGATION</li>
+            </ul>
+            {MENU}
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content">
+            <div id="adianti_div_content">
+            </div>
+        </section><!-- /.content -->
+
+        <div id="adianti_online_content"></div>
+        <div id="adianti_online_content2"></div>
+
+        <div class="right-panel" id="adianti_right_panel"></div>
+    </div><!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> x.y.z
+        </div>
+        <strong>Footer</strong>
+        <strong>{userunitid} - {userunitname}</strong>
+    </footer>
+
+    <div class="debug-panel" id="adianti_debug_panel">
+        <i aria-hidden="true" class="fa fa-times" onclick="Adianti.hideDebugPanel()" title="_t{Close}"></i>
+        <span> Request URL </span>
+        <span> Request Data </span>
+        <div id="request_url_panel"></div>
+        <div id="request_data_panel"></div>
+    </div>
+
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+</div><!-- ./wrapper -->
+
+<!-- AdminLTE App -->
+<script src="app/templates/{template}/js/app.min.js"></script>
+<script src="app/templates/{template}/js/custom.js"></script>
+</body>
+</html>

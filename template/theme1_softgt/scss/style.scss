@@ -1,0 +1,168 @@
+@import 'variables';
+
+* {
+  font-family: $font-family, sans-serif;
+}
+
+html, body {
+  background: $dash-background;
+}
+
+/** Parts of Page */
+@import "parts/sidebar";
+@import "parts/userbar";
+@import "parts/content_sidebar";
+@import "parts/search";
+
+/** Components not present in boot */
+@import "components/form";
+@import "components/paginator";
+@import "components/content_box";
+@import "components/nav";
+@import "components/collapse";
+@import "components/icons";
+@import "components/messages";
+
+/** CSS App */
+@import "apps/app_home";
+@import "apps/app_users";
+@import "apps/app_companies";
+@import "apps/app_realty";
+
+html {
+  width: 100% !important;
+  height: 100vmin !important;
+}
+
+body {
+  margin: 0 !important;
+  min-height: 100% !important;
+  height: 100vmin !important;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-header {
+  width: 100% !important;
+  padding: 0 !important;
+  .navbar {
+    background: lightseagreen !important;
+    width: 100% !important;
+
+    .panel-title {
+      font-weight: 900;
+      font-size: 3em;
+    }
+  }
+
+  .navbar-toggle {
+    background-color: transparent;
+  }
+
+  .container {
+    max-width: 80vw !important;
+    flex-wrap: nowrap !important;
+
+    .navbar-header {
+      width: 10vmax !important;
+    }
+
+    .navbar-collapse {
+      width: 70vmax !important;
+      flex-basis: 90% !important;
+
+      .navbar-nav {
+        flex-direction: unset !important;
+
+        .dropdown-menu {
+          position: absolute;
+          width: 200px !important;
+          margin-top: 20px !important;
+          background: lightseagreen !important;
+          color: white !important;
+        }
+
+        .navbar-left {
+          width: 70% !important;
+        }
+
+        .navbar-right {
+          width: 30% !important;
+          float: right !important;
+        }
+
+        li {
+          padding-left: 20px !important;
+
+          a {
+            padding-left: 2px !important;
+            padding-right: 2px !important;
+
+            span {
+              color: white !important;
+              font-weight: 700 !important;
+            }
+          }
+
+          a:hover {
+            span {
+              color: gold !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.content-wrapper {
+  width: 100% !important;
+  min-height: 100vh !important;
+  flex-basis: 100%;
+  background-color: $dash-background !important;
+  color: $color-gray-medium !important;
+
+  .content {
+    height: 85vh !important; /* para suporte nativo */
+    .nav {
+      flex-direction: unset;
+    }
+
+    .tbreadcrumb {
+      display: none !important;
+    }
+  }
+}
+
+footer {
+  position: fixed !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100vmax !important;
+}
+
+label {
+  display: inline-block !important;
+  font-size: 1rem !important;
+}
+
+input {
+  border-radius: .25rem !important;
+  height: 34px !important;
+}
+
+/** RWD */
+@media (min-width: $dash-rwd-breakpoint-1) {
+  .on_mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: $dash-rwd-breakpoint-3) {
+  .no_mobile {
+    display: none !important;
+  }
+}

@@ -4,8 +4,10 @@ Temas para apresentação do template [Adianti FrameWork 7.1](https://www.adiant
 # Bootstrap
 Temas baseado na aparecem padrão do Bootstrap
 
+* [Boostrap Theme1_softgt](template/bootstrap_them1_softgt.md), criado pelo [AgostinhoBarbosa da SoftGt](https://github.com/AgostinhoBarbosa) 
 * [Boostrap Theme3_v4](template/bootstrap_theme3_v4.md)
 
+Ideia geral um Tema BootStrap
 ![theme_bootstrap](img/theme_bootstrap.png)
 
 
@@ -14,4 +16,5 @@ Temas baseado na aparecem Material da google, são temas Bootstrap porém com o 
 
 * [Boostrap Theme4_v4](template/material_theme4_v4.md)
 
+Ideia geral um tema Material
 ![theme_material](img/theme_material.png)

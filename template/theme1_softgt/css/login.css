@@ -1,0 +1,83 @@
+/** COLOR's DEFAULT **/
+/** LOGIN - LEFT */
+/** LOGIN - RIGHT */
+/** DASH - SIDEBAR */
+/** DASH - CONTENT */
+/** DASH - RWD */
+/**
+FONT SYSTEM
+ */
+/**
+COLOR SYSTEM
+ */
+/** Auto generate buttons, gradients */
+/**
+RADIUS SYSTEM
+ */
+/**
+INDEX SYSTEM
+ */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/** CONFIG */
+html, body {
+  min-height: 100vh;
+  background-image: url("/app/images/martelo-globo.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/** SCREEN */
+.navbar-light {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: lightseagreen !important;
+}
+.navbar-light a {
+  color: white !important;
+  font-size: 3em !important;
+  text-align: center !important;
+}
+
+div[form=form_login] .panel-heading {
+  background: lightseagreen !important;
+}
+div[form=form_login] .panel-heading .panel-title {
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.tfield {
+  border-radius: 5px !important;
+}
+
+.login-avatar {
+  border-radius: 5px !important;
+}
+
+.card-footer button {
+  border-radius: 5px !important;
+  background: lightseagreen !important;
+}
+
+/** RESPONSIVE */
+@media (max-width: 66em) {
+  .dash_login_right {
+    display: none;
+  }
+
+  .dash_login_left {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 40em) {
+  .dash_login_left_box {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */

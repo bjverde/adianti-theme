@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SoftGt</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link href="manifest.json?appver=700" rel="manifest">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="app/images/icon.png" rel="apple-touch-icon" sizes="180x180">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+
+    {LIBRARIES}
+    {HEAD}
+
+    <link href="app/lib/include/admin.min.css?appver=700" media="screen" rel="stylesheet" type="text/css">
+    <link href="app/templates/{template}/css/AdminLTE.min.css" rel="stylesheet">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+    <link href="app/templates/{template}/css/skins/_all-skins.min.css" rel="stylesheet">
+    <link href="app/templates/{template}/login.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+<nav class="main-header navbar navbar-light bg-light fixed-top" role="navigation"
+     style="margin-bottom: 0; text-align:center">
+    <a class="navbar-brand" href="http://www.favaretoleiloes.com.br">{EMPRESA}</a>
+</nav>
+
+<div id="wrapper" style="width:90%;margin:auto;margin-top:10px">
+    <div id="adianti_div_content"></div>
+    <div id="adianti_online_content"></div>
+    <div id="adianti_online_content2"></div>
+
+</div>
+<div style="text-align:center">
+    <!--[CREATE-ACCOUNT]--> <a href="index.php?class=SystemRegistrationForm"><i aria-hidden="true"
+                                                                                class="fa fa-user-plus green"></i>
+    _t{Create account}</a> <!--[/CREATE-ACCOUNT]-->
+    &nbsp;&nbsp;
+    <!--[RESET-PASSWORD]--> <a href="index.php?class=SystemRequestPasswordResetForm"><i aria-hidden="true"
+                                                                                        class="fa fa-eraser orange"></i>
+    _t{Reset password}</a> <!--[/RESET-PASSWORD]-->
+</div>
+
+<a class="little-float-button bg-yellow" href="index.php?class=SystemModulesCheckView" style="pointer-events: auto;"
+   title="PHP Modules">
+    <i class="fa fa-cog internal-float-button"></i>
+</a>
+
+<!-- /#wrapper -->
+</body>
+</html>
