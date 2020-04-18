@@ -48,9 +48,10 @@ Editar o arquivo `<SISTEMA>/app/config/application.ini`
 ```ini
 [system]
 version = 2.0.0
-head_title = Sistema de Exemplo
+head_title = Fork do Template do Adianti
 logo-lg = Exemplo
-logo-link-class = index.php?class=SystemAboutView
+logo-mini = /images/icon.png
+logo-link-class = 'index.php?class=SystemAboutView'
 login-link = http://wwww.meusite.com.br
 ```
 ### Etapa 02
