@@ -26,7 +26,7 @@ Visão Desktop
 Visão no celular Desktop
 ![Theme_formdin_celular](../img/theme_formdin_celular.png)
 
-[Vejas imagens do Themve3_v4](bootstrap_theme3_v4.md#theme3_v4)
+[Vejas imagens do Themve3_v4, para ver outras mudanças](bootstrap_theme3_v4.md#theme3_v4)
 
 ## Origem das fontes MaterialIcons
 * MaterialIcons - https://github.com/google/material-design-icons/releases

@@ -5,9 +5,9 @@ Temas para apresentação do template [Adianti FrameWork 7.1](https://www.adiant
 Temas baseado na aparecem padrão do Bootstrap
 
 * [Boostrap Theme1_softgt](template/bootstrap_them1_softgt.md), criado pelo [AgostinhoBarbosa da SoftGt](https://github.com/AgostinhoBarbosa) 
-* [Boostrap Theme_formdin](template/bootstrap_theme_formdin.md), tema baseado no tema classico do FormDin 4
-* [Boostrap Theme3_h](template/bootstrap_theme3_h.md)
-* [Boostrap Theme3_v4](template/bootstrap_theme3_v4.md)
+* [Boostrap Theme_formdin](template/bootstrap_theme_formdin.md), tema com menu horizontal e baseado no tema classico do FormDin 4
+* [Boostrap Theme3_h](template/bootstrap_theme3_h.md), tema com menu horizontal
+* [Boostrap Theme3_v4](template/bootstrap_theme3_v4.md), pequenas melhorias no tema padrão
 
 
 Ideia geral um Tema BootStrap
