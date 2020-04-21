@@ -6,8 +6,9 @@ Temas para apresentação do template [Adianti FrameWork 7.1](https://www.adiant
 
 
 # Theme3_v4
-Tema baseado no [theme3_v4](../framework_puro.md#theme3_v4) para o FrameWork puro. *Quais são as diferenças do theme 3 do Adianti ?*. Veja abaixo:
+Tema baseado no [theme3_v4](../framework_puro.md#theme3_v4) para o FrameWork puro.
 
+*Quais são as diferenças do theme 3 do Adianti ?*.
 1. retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom , o que aumenta acessebilidade para os usuários.
 1. Inclusão dos arquivos das fontes MaterialIcons e source-code-pro assim não precisa de internet para baixar as fontes. 
 1. Inclusão do nome do sistema de forma customizada no `application.ini`.
@@ -41,10 +42,8 @@ Mostrando o numero da versão, no rodape
 ## Para usar 
 
 ### Etapa 01 
-Editar o arquivo `<SISTEMA>/app/config/application.ini`
+Editar o arquivo `<SISTEMA>/app/config/application.ini` incluindo as informações abaixo : 
 
-1. Alterar para `theme = theme3_v4`
-1. incluindo as informações abaixo : 
 ```ini
 [system]
 version = 2.0.0
@@ -54,6 +53,7 @@ logo-mini = /images/icon.png
 logo-link-class = 'index.php?class=SystemAboutView'
 login-link = http://wwww.meusite.com.br
 ```
+
 ### Etapa 02
 Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linhas abaixo:
 ```php
