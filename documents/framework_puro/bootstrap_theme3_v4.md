@@ -6,7 +6,7 @@ Temas para apresentação do [Adianti FrameWork 7.1](https://www.adianti.com.br/
 
 
 # theme3_v3
-Tema baseado no [theme3_v4](bootstrap_theme3_v4.md) para Adianti FrameWork 7.1
+Tema baseado no [theme3_v3](bootstrap_theme3_v3.md) para Adianti FrameWork 7.1
 
 
 ## *Quais são as diferenças do theme 3 do Adianti ?*.
@@ -17,7 +17,6 @@ Tema baseado no [theme3_v4](bootstrap_theme3_v4.md) para Adianti FrameWork 7.1
 * Title do HEAD alterado conforme novos parametos `head_title` e `version` no `application.ini`.
 * Arquivo de `libraries.html` conforme Adianti 7.1
 * Arquivo favicon.png
-* Arquivo de `layout.html` alterado removendo `layout-boxed` para ocupar toda area
 
 ## Telas e suas alterações
 Locais das alterações
@@ -48,7 +47,7 @@ login-link = http://wwww.meusite.com.br
 Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linhas abaixo. Depois altere no arquivo `<SISTEMA>/app/config/application.ini` informando o nome do Tema.
 
 ```php
-            case 'theme3_v5':
+            case 'theme3_v4':
                     ob_start();
                     $xml = new SimpleXMLElement(file_get_contents($file));
                     $menu = new TMenu($xml, null, 1, 'treeview-menu', 'treeview', '');
