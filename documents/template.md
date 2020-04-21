@@ -1,7 +1,7 @@
 # Temas para o Template
 Temas para apresentação do template [Adianti FrameWork 7.1](https://www.adianti.com.br/)
 
-# Bootstrap
+## Bootstrap
 Temas baseado na aparecem padrão do Bootstrap
 
 * [Boostrap Theme1_softgt](template/bootstrap_them1_softgt.md), criado pelo [AgostinhoBarbosa da SoftGt](https://github.com/AgostinhoBarbosa) 
@@ -14,7 +14,7 @@ Ideia geral um Tema BootStrap
 ![theme_bootstrap](img/theme_bootstrap.png)
 
 
-# Material
+## Material
 Temas baseado na aparecem Material da google, são temas Bootstrap porém com o lock en feel diferente.
 
 * [Boostrap Theme4_v4](template/material_theme4_v4.md)

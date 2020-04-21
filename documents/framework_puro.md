@@ -1,7 +1,16 @@
 # Temas para o FremeWork Puro
 Temas para apresentação do [Adianti FrameWork 7.0](https://www.adianti.com.br/)
 
+## Bootstrap
+Temas baseado na aparecem padrão do Bootstrap
+* [Boostrap Theme_formdin](framework_puro/bootstrap_theme_formdin.md), tema com menu horizontal e baseado no tema classico do FormDin 4
+* [theme3_v5](framework_puro/bootstrap_theme3_v5.md)
 
+## Material
+Temas baseado na aparecem Material da google, são temas Bootstrap porém com o lock en feel diferente.
+
+
+# OLD
 * Theme3_v2 - melhorando acessabilidade e removendo dependencias externas.
 * Theme3_v3 - V2 + informações dinamicas configuradas no arquivo `application.ini`
 * [theme3_v4](framework_puro.md#theme3_v4)
