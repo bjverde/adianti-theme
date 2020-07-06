@@ -23,8 +23,8 @@ Tema baseado no [theme3_h](../bootstrap_theme3_h.md) para o Template. *Quais sã
 Visão Desktop
 ![Theme_formdin](../img/theme_formdin.png)
 
-Visão no celular Desktop
-![Theme_formdin_celular](../img/theme_formdin_celular.png)
+Visão celular
+<br><img src="../img/theme_formdin_celular.png" width="400" />
 
 [Vejas imagens do Themve3_v4, para ver outras mudanças](bootstrap_theme3_v4.md#theme3_v4)
 
