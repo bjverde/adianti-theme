@@ -9,3 +9,4 @@ Os temas foram separados em duas categorias no momento:
 
 Link
 * Pagina principal do projeto Admin LTE - https://adminlte.io/
+* Os temas com Material são baseado no https://github.com/gurayyarar/AdminBSBMaterialDesign
