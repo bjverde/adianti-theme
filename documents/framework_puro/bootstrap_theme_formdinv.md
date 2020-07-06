@@ -21,10 +21,10 @@ Tema baseado no [theme3_v5](../bootstrap_theme3_v5.md) para o Template. *Quais s
 
 ## Telas e suas alterações
 Visão Desktop
-![Theme_formdin](../img/theme_formdin.png)
+![Theme_formdin](../img/theme_formdinv.png)
 
 Visão no celular Desktop
-![Theme_formdin_celular](../img/theme_formdin_celular.png)
+![Theme_formdin_celular](../img/theme_formdinv_celular.png =460x817)
 
 [Vejas imagens do Themve3_v4, para ver outras mudanças](bootstrap_theme3_v4.md#theme3_v4)
 
