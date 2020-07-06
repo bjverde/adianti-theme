@@ -48,6 +48,8 @@ Editar o arquivo `<SISTEMA>/app/config/application.ini`
 ```ini
 [system]
 version = 2.0.0
+system_name = 'Aplicação de Exemplo 1 do FormDin5 com Adianti'
+system_name_sub = 'APPEV1'
 head_title = Fork do Template do Adianti
 logo-lg = Exemplo
 logo-mini = /images/icon.png
@@ -74,11 +76,13 @@ Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linh
 ### Etapa 03
 Edite o arquivo `<SISTEMA>/index.php` incluido as linhas abaixo:
 ```php
-$system_version = $ini['system']['version'];
-$head_title  = $ini['system']['head_title'].' - v'.$system_version;
-$content     = str_replace('{head_title}', $head_title, $content);
-$content     = str_replace('{system_version}', $system_version, $content);
-$content     = str_replace('{logo-mini}', $ini['general']['application'], $content);
+$content     = str_replace('{head_title}', $ini['general']['application'], $content);
+$content     = str_replace('{formdin_min_version}', $ini['system']['formdin_min_version'], $content);
+$content     = str_replace('{system_version}', $ini['system']['version'], $content);
+$content     = str_replace('{system_name}', $ini['system']['system_name'], $content);
+$content     = str_replace('{system_name_sub}', $ini['system']['system_name_sub'], $content);
+$content     = str_replace('{logo-mini}', $ini['system']['logo-mini'], $content);
 $content     = str_replace('{logo-lg}', $ini['system']['logo-lg'], $content);
 $content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'], $content);
+$content     = str_replace('{login-link}', $ini['system']['login-link'], $content);
 ```
