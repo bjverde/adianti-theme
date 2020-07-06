@@ -36,6 +36,10 @@ Visão celular
 
 ## Para usar 
 
+### Etapa 00
+
+1. copiar a pasta `<CLONE_GIT>/framework_puro/theme_formdin` para `<SISTEMA>/app/templates`
+
 ### Etapa 01 
 Editar o arquivo `<SISTEMA>/app/config/application.ini`
 
