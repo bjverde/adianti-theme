@@ -57,5 +57,8 @@ Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linh
 ```
 
 ### Etapa 03
+Copiar toda pasta app/templates/theme3 do adianti template para app/templates/theme_fcortez
 
-Copiar os arquivos Edite o arquivo `<SISTEMA>/index.php` incluido as linhas abaixo:
+### Etapa 04
+
+Copiar os arquivos as subpastas do adianti para
