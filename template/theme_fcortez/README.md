@@ -31,16 +31,10 @@ Mostrando o numero da versão, no rodape
 ## Para usar 
 
 ### Etapa 01 
-Editar o arquivo `<SISTEMA>/app/config/application.ini` incluindo as informações abaixo : 
+Editar o arquivo `<SISTEMA>/app/config/application.ini` alterar a linha abaixo : 
 
 ```ini
-[system]
-version = 2.0.0
-head_title = Fork do Template do Adianti
-logo-lg = Exemplo
-logo-mini = /images/icon.png
-logo-link-class = 'index.php?class=SystemAboutView'
-login-link = http://wwww.meusite.com.br
+theme = theme_fcortez
 ```
 
 ### Etapa 02
@@ -53,9 +47,8 @@ Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linh
                 $menu->show();
                 $menu_string = ob_get_clean();
                 return $menu_string;
-                break;
+            break;
 ```
-
 ### Etapa 03
 Copiar toda pasta app/templates/theme3 do adianti template para app/templates/theme_fcortez
 
