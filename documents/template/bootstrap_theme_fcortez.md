@@ -2,8 +2,7 @@
 
 Temas para apresentação do template [Adianti FrameWork 7.2.2](https://www.adianti.com.br/) baseado na aparecem padrão d BootStrap. Provalemente irá funcionar nas versões 7.0 e 7.1.
 
-Esse tema foi criado por : Felipe Cortez ( felipecortez.fgc@gmail.com )
-Link do projeto original: https://github.com/cortezfelipe/template-horizontal
+Esse tema foi criado por : Felipe Cortez ( felipecortez.fgc@gmail.com ). Link do projeto original: https://github.com/cortezfelipe/template-horizontal
 
 
 # Theme FCortez
