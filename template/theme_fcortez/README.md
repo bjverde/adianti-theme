@@ -11,6 +11,7 @@ Tema baseado no theme3 do Adianti Template
 
 *Quais são as diferenças do theme 3 do Adianti ?*.
 1. retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom , o que aumenta acessebilidade para os usuários.
+1. Layout com barra de menus vertical
 
 
 ## Telas e suas alterações
