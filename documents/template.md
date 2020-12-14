@@ -16,6 +16,7 @@ Ideia geral um Tema BootStrap
 * [Boostrap Theme_formdin](template/bootstrap_theme_formdin.md), tema com menu horizontal e baseado no tema classico do FormDin 4
 * [Boostrap Theme3_h](template/bootstrap_theme3_h.md), tema com menu horizontal
 * [Boostrap Theme_fcortez](template/bootstrap_theme_fcortez.md), tema com menu horizontal criado por [Felipe Cortez](https://github.com/cortezfelipe/template-horizontal)
+* [Boostrap h_formdin2](template/bootstrap_h_formdin2.md), tema com menu horizontal e baseado: no tema classico do FormDin 4 e [Fcortez](template/bootstrap_theme_fcortez.md)
 
 ## Material
 Temas baseado na aparecem Material da google, são temas Bootstrap porém com o lock en feel diferente.

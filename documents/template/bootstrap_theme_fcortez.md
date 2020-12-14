@@ -4,6 +4,9 @@ Temas para apresentação do template [Adianti FrameWork 7.2.2](https://www.adia
 
 Esse tema foi criado por : Felipe Cortez ( felipecortez.fgc@gmail.com ). Link do projeto original: https://github.com/cortezfelipe/template-horizontal
 
+* [<- voltar para lista de temas BootStrap](../template.md)
+* [<- voltar para index](../../README.md)
+
 
 # Theme FCortez
 Tema baseado no theme3 do Adianti Template
