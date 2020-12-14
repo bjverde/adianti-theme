@@ -14,17 +14,17 @@ Tema baseado no theme3 do Adianti Template
 
 
 ## Telas e suas alterações
-Alterações na tela de login
-![Theme3_v4_login](../img/template_theme3_v3_login.png)
+Desktop, o menu
+![Theme3_v4_login](../img/template_fcortez.png)
 
-Alterações nas telas publicas
-![Theme3_v4_public](../img/template_theme3_v3_public.png)
+Celular, o menu
+![Theme3_v4_public](../img/template_fcortez_celular.png)
 
-Alterações nas telas Principais
-![Theme3_v4_layout](../img/template_theme3_v3_layout.png)
+Celular, o DashBoard
+![Theme3_v4_layout](../img/template_fcortez_celular02.png)
 
-Mostrando o numero da versão, no rodape
-![template_theme3_v3_layout_rodape](../img/template_theme3_v3_layout_rodape.png)
+Tablet, o DashBoard
+![template_theme3_v3_layout_rodape](../img/template_fcortez_tablet.png)
 
 
 
