@@ -170,6 +170,9 @@ footer
 	color: #000;
 	background-color: rgb(255, 249, 153);
 }
+.tfield[widget="ttext"] {
+	resize: revert;
+}
 
 
 @media (max-width: 575.98px) { 
