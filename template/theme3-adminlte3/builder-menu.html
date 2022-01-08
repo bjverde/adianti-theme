@@ -1,0 +1,84 @@
+<li class="nav-item dropdown hidden-xs">
+  <div>
+    <a class="nav-link" data-toggle="dropdown" href="#">
+      <i class="fas fa-cog"></i>
+    </a>
+    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+      <span class="dropdown-item dropdown-header">Adianti Builder</span>
+
+      <div class="dropdown-divider"></div>
+
+      <a onclick="Builder.editPage()" generator="adianti" href="#" class="dropdown-item">
+        <div class="media">
+          <div class="media-body">
+            <h3 class="dropdown-item-title">Editar a página</h3>
+          </div>
+        </div>
+      </a>
+
+      <div class="dropdown-divider"></div>
+
+      <a generator="adianti" href="index.php?class=BuilderPageBatchUpdate" class="dropdown-item">
+        <div class="media">
+          <div class="media-body">
+            <h3 class="dropdown-item-title">Atualizar códigos</h3>
+          </div>
+        </div>
+      </a>
+
+
+      <div class="dropdown-divider"></div>
+
+      <a generator="adianti" href="index.php?class=BuilderDatabaseDiffForm&method=onLoad" class="dropdown-item">
+        <div class="media">
+          <div class="media-body">
+            <h3 class="dropdown-item-title">Atualizar base de dados</h3>
+          </div>
+        </div>
+      </a>
+
+
+      <div class="dropdown-divider"></div>
+
+      <a generator="adianti" href="index.php?class=BuilderMenuUpdate&method=onAskUpdate&register_state=false"
+        class="dropdown-item">
+        <div class="media">
+          <div class="media-body">
+            <h3 class="dropdown-item-title">Atualizar menus</h3>
+          </div>
+        </div>
+      </a>
+
+      <div class="dropdown-divider"></div>
+
+      <a generator="adianti" href="index.php?class=BuilderPermissionUpdate&method=onAskUpdate&register_state=false"
+        class="dropdown-item">
+        <div class="media">
+          <div class="media-body">
+            <h3 class="dropdown-item-title">Atualizar permissões</h3>
+          </div>
+        </div>
+      </a>
+
+      <div class="dropdown-divider"></div>
+
+      <a generator="adianti" href="index.php?class=BuilderConfigList" class="dropdown-item">
+        <div class="media">
+          <div class="media-body">
+            <h3 class="dropdown-item-title">Arquivos de configuração</h3>
+          </div>
+        </div>
+      </a>
+      
+      <div class="dropdown-divider"></div>
+
+      <a generator="adianti" href="#" onclick="BuilderEditorCss.initEditorCss()" class="dropdown-item">
+        <div class="media">
+          <div class="media-body">
+            <h3 class="dropdown-item-title">Editor de estilos</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</li>

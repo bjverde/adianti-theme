@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Adianti Builder </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="manifest" href="manifest.json?appver=730">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/images/icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    {LIBRARIES}
+    {LIBRARIES_THEME}
+    {LIBRARIES_BUILDER}
+    {LIBRARIES_USER}
+    {HEAD}
+
+  </head>
+  
+  <body class="hold-transition skin-blue sidebar-mini {builder_top_menu} layout-navbar-fixed">
+    <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!--[IF-LEFT-MENU]-->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+      <!--[/IF-LEFT-MENU]-->
+        <!--[IF-TOP-MENU]-->
+        <div class="builder-menu navbar-custom-menu  collapse " id="navbar-builder-top-menu-collapse">
+          <li class="arrow-menus-scroll"><a href="#"><i class="fas fa-chevron-left fa-fw"></i></a></li>
+          {TOP-MENU-BUILDER}
+          <li class="arrow-menus-scroll"><a href="#"><i class="fas fa-chevron-right fa-fw"></i></a></li>
+        </div>
+      <!--[/IF-TOP-MENU]-->
+      <ul class="navbar-nav ml-auto">
+        <li class="navbar-custom-menu hidden-xs"></li>
+        
+        <li class="nav-item">
+          <a class="nav-link" data-slide="true" role="button" generator="adianti" href="index.php?class=LoginForm" title="Login">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <!--[IF-TOP-MENU]-->
+        <li class="nav-item builder-top-menu">
+          <a href="#" class="nav-link navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#navbar-builder-top-menu-collapse">
+            <i class="fas fa-ellipsis-v"></i>
+          </a>
+        </li>
+          <!--[/IF-TOP-MENU]-->
+      </ul>
+      </nav>
+
+    </nav>
+    <!--[IF-LEFT-MENU]-->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <a href="index.php" class="brand-link">
+        <span class="brand-text font-weight-light">Adianti Builder</span>
+      </a>
+      <div class="sidebar">
+        <nav class="mt-2">
+          {MENU}
+        </nav>
+      </div>
+    </aside>
+    <!--[/IF-LEFT-MENU]-->
+      <div class="content-wrapper">
+        <section class="content"  id='adianti_content'>
+          <div id="adianti_div_content"></div>
+        </section>
+        <div id="adianti_online_content"></div>
+        <div id="adianti_online_content2"></div>
+        
+        <div id="adianti_right_panel" class="right-panel"></div>
+      </div>
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>Version</b> x.y.z
+        </div>
+        <strong>{userunitid} - {userunitname}</strong>
+        <!--[IFADMIN]-->
+        <a style="cursor:pointer; color: teal" generator="adianti" href="index.php?class=SystemModulesCheckView"> <i class="fa fa-code" aria-hidden="true"></i> PHP Modules </a> &nbsp;&nbsp;
+        <span style="cursor:pointer; color: teal" onclick="Adianti.showDebugPanel()"> <i class="fa fa-window-maximize" aria-hidden="true"></i> Debug Console </span>
+        <!--[/IFADMIN]-->
+      </footer>
+      
+      <div id="adianti_debug_panel" class="debug-panel">
+          <i onclick="Adianti.hideDebugPanel()" class="fa fa-times" aria-hidden="true" title="_t{Close}"></i>
+          <span > Request URL </span>
+          <span > Request Data </span>
+          <div id="request_url_panel"> </div>
+          <div id="request_data_panel"> </div>
+      </div>
+      <div class="control-sidebar-bg"></div>
+    </div>
+    <script>
+
+        BuilderTemplate.init({
+          top_menu: {top_menu_var},
+          top_menu_only: {top_menu_only},
+          language: '{lang}',
+          debug: '{debug}',
+          verify_messages_menu : false,
+          verify_notifications_menu : false,
+          public_layout: true
+        });
+  
+      </script>
+      
+  </body>
+</html>
