@@ -1,13 +1,11 @@
 # Temas para o FrameWork Puro
-Temas para apresentação do [Adianti FrameWork 7.1](https://www.adianti.com.br/) baseado na aparecem padrão d BootStrap
+Temas para apresentação do [Adianti FrameWork 7.5.1b](https://www.adianti.com.br/) baseado na aparecem padrão d BootStrap
 
 * [<- voltar para lista de temas BootStrap](../framework_puro.md)
 * [<- voltar para index](../../README.md)
 
 
-# theme3_v3
-Tema baseado no [theme3_v4](bootstrap_theme3_v4.md) para Adianti FrameWork 7.1
-
+# theme3_v5
 
 ## *Quais são as diferenças do theme 3 do Adianti ?*.
 * retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom , o que aumenta acessebilidade para os usuários.
