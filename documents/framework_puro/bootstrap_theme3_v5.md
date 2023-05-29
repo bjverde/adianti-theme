@@ -19,7 +19,7 @@ Temas para apresentação do [Adianti FrameWork 7.5.1b](https://www.adianti.com.
 
 ## Telas e suas alterações
 Locais das alterações
-![Theme3_v3](img/theme3_v3.png)
+![Theme3_v3](../img/theme3_v3.png)
 
 ### Origem das fontes MaterialIcons
 * MaterialIcons - https://github.com/google/material-design-icons/releases
