@@ -13,6 +13,7 @@ Ideia geral um Tema BootStrap
 ## Material
 Temas baseado na aparecem Material da google, são temas Bootstrap porém com o lock en feel diferente.
 
+* [theme4_v5](framework_puro/bootstrap_theme4_v5.md)
 
 # Theme4_v2
 Tema baseado no theme4 do Adianti FrameWork 7.0, *Quais são as diferenças do theme 4 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
