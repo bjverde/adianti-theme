@@ -14,11 +14,3 @@ Ideia geral um Tema BootStrap
 Temas baseado na aparecem Material da google, são temas Bootstrap porém com o lock en feel diferente.
 
 * [theme4_v5](framework_puro/bootstrap_theme4_v5.md)
-
-# Theme4_v2
-Tema baseado no theme4 do Adianti FrameWork 7.0, *Quais são as diferenças do theme 4 do Adianti 7.0 ?*. Abaixo as lista dediferenças:
-
-* retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários.
-
-## Para usar 
-Subistiua o arquivo `<SISTEMA>/app/templates/theme4/layout.html` pelo arquivo que está na pasta `theme4_v2/layout.html`.
