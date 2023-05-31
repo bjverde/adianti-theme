@@ -43,19 +43,16 @@ login-link = http://wwww.meusite.com.br
 
 ### Parte 02
 
-Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linhas abaixo. Depois altere no arquivo `<SISTEMA>/app/config/application.ini` informando o nome do Tema.
+Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php`. 
 
+Depois altere no  
 ```php
-            case 'theme3_v5':
-                    ob_start();
-                    $xml = new SimpleXMLElement(file_get_contents($file));
-                    $menu = new TMenu($xml, null, 1, 'treeview-menu', 'treeview', '');
-                    $menu->class = 'sidebar-menu';
-                    $menu->id    = 'side-menu';
-                    $menu->show();
-                    $menu_string = ob_get_clean();
-                    return $menu_string;
-                    break;  
+$menu->style = 'overflow: hidden; width: auto; height: 390px;';
+```
+
+para
+```php
+$menu->style = 'overflow: hidden; width: auto;';
 ```
 
 ### Parte 03
