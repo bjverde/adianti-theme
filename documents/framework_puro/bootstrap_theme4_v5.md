@@ -5,7 +5,7 @@ Temas para apresentação do [Adianti FrameWork 7.5.1b](https://www.adianti.com.
 * [<- voltar para index](../../README.md)
 
 
-# theme3_v5
+# theme4_v5
 
 ## *Quais são as diferenças do theme 4 do Adianti ?*
 * retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom , o que aumenta acessebilidade para os usuários.
