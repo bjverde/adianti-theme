@@ -28,10 +28,18 @@ Locais das alterações
 
 
 
-## Para usar 
+## Para usar o theme4_v5
+1. copie a pasta pasta `theme4_v5` dentro de framework_puro cole em `<SISTEMA>/app/templates`
+1. Excute as partes abaixo
 
 ### Parte 01 
-Editar o arquivo `<SISTEMA>/app/config/application.ini` incluindo as informações abaixo : 
+Editar o arquivo `<SISTEMA>/app/config/application.ini`
+
+#### alterar o tema padrão
+altere o valor `theme = <NOME ATUAL>` para `theme = theme4_v5`
+
+#### incluindo seção system 
+Incluir uma nova seção com as informações abaixo
 ```ini
 [system]
 system_version = 2.0.0
