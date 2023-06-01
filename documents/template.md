@@ -9,7 +9,7 @@ Ideia geral um Tema BootStrap
 
 ### Menu Vertical
 
-* [Boostrap Theme3_v4](template/bootstrap_theme3_v4.md), pequenas melhorias no tema padrão
+* [Boostrap Theme3_v5](template/bootstrap_theme3_v5.md), pequenas melhorias no tema padrão
 
 ### Menu Horizontal
 * [Boostrap Theme1_softgt](template/bootstrap_them1_softgt.md), criado pelo [AgostinhoBarbosa da SoftGt](https://github.com/AgostinhoBarbosa)
