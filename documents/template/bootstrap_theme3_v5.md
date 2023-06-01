@@ -1,21 +1,25 @@
 # Temas para o Template
-Temas para apresentação do template [Adianti FrameWork 7.1](https://www.adianti.com.br/) baseado na aparecem padrão d BootStrap
+Temas para apresentação do template [Adianti FrameWork 7.5.1](https://www.adianti.com.br/) baseado na aparecem padrão d BootStrap
 
 * [<- voltar para lista de temas BootStrap](../template.md)
 * [<- voltar para index](../../README.md)
 
 
-# Theme3_v4
-Tema baseado no [theme3_v4](../framework_puro.md#theme3_v4) para o FrameWork puro.
+# Theme3_v5
+Tema baseado no [theme3_v5](../framework_puro.md#Bootstrap) para o FrameWork puro.
 
 *Quais são as diferenças do theme 3 do Adianti ?*.
-1. retirada do `maximum-scale=1, user-scalable=no` da `viewport` no arquivo layout.html. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom , o que aumenta acessebilidade para os usuários.
 1. Inclusão dos arquivos das fontes MaterialIcons e source-code-pro assim não precisa de internet para baixar as fontes. 
-1. Inclusão do nome do sistema de forma customizada no `application.ini`.
-1. Inclusão da versão do sistema de forma customizada no `application.ini`.
-1. Title do HEAD alterado conforme novos parametos `head_title` e `version` no `application.ini`
-1. Arquivo favicon.png no `/theme3_v4/img/favicon.png`
-1. Inclusão do link de login nas telas iniciais
+1. Arquivo: `layout.html` - retirada do `maximum-scale=1, user-scalable=no` da `viewport`. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários.
+1. Arquivo: `layout.html` - Inclusão do nome do sistema de forma customizada `{logo-lg}` ou `{logo-mini}` no `application.ini`.
+1. Arquivo: `layout.html` - Inclusão da versão do sistema `{system_version}` de forma customizada no `application.ini`.
+1. Arquivo: `layout.html` - Title do HEAD alterado conforme novos parametos `{head_title}` e `{system_version}` no `application.ini`.
+1. Arquivo: `layout.html` - Inclusão favicon.png
+1. Arquivo: `libraries.html` - conforme Adianti 7.5.1b
+1. Arquivo: `login.html` - Inclusão do nome do sistema de forma customizada `{logo-lg}` ou `{logo-mini}` no `application.ini`.
+1. Arquivo: `login.html` - Title do HEAD alterado conforme novos parametos `{head_title}` e `{system_version}` no `application.ini`.
+1. Arquivo: `public.html` - Inclusão do nome do sistema de forma customizada `{logo-lg}` ou `{logo-mini}` no `application.ini`.
+1. Arquivo: `public.html` - Title do HEAD alterado conforme novos parametos `{head_title}` e `{system_version}` no `application.ini`.
 
 
 ## Telas e suas alterações
@@ -57,7 +61,7 @@ login-link = http://wwww.meusite.com.br
 ### Etapa 02
 Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linhas abaixo:
 ```php
-            case 'theme3_v4':
+            case 'theme3_v5':
                 ob_start();
                 $callback = array('SystemPermission', 'checkPermission');
                 $xml = new SimpleXMLElement(file_get_contents($file));
