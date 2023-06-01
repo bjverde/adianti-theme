@@ -43,36 +43,43 @@ Mostrando o numero da versão, no rodape
 * Artigo do StackOverFlow que ajudou corrigir os temas - https://stackoverflow.com/questions/37270835/how-to-host-material-icons-offline
 
 
-## Para usar 
+## Para usar o theme3_v5
+1. copie a pasta pasta `theme3_v5` dentro de framework_puro cole em `<SISTEMA>/app/templates`
+1. Excute as partes abaixo
 
-### Etapa 01 
-Editar o arquivo `<SISTEMA>/app/config/application.ini` incluindo as informações abaixo : 
+### Parte 01 
+Editar o arquivo `<SISTEMA>/app/config/application.ini`
+
+#### alterar o tema padrão
+altere o valor `theme = <NOME ATUAL>` para `theme = theme3_v5`
+
+#### incluindo seção system 
+Incluir uma nova seção com as informações abaixo
 
 ```ini
 [system]
-version = 2.0.0
-head_title = Fork do Template do Adianti
+system_version = 2.0.0
+head_title = Sistema de Exemplo
 logo-lg = Exemplo
-logo-mini = /images/icon.png
-logo-link-class = 'index.php?class=SystemAboutView'
+logo-link-class = 'SystemAboutView'
 login-link = http://wwww.meusite.com.br
 ```
 
-### Etapa 02
-Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linhas abaixo:
+### Parte 02
+Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linhas abaixo. 
 ```php
             case 'theme3_v5':
-                ob_start();
-                $callback = array('SystemPermission', 'checkPermission');
-                $xml = new SimpleXMLElement(file_get_contents($file));
-                $menu = new TMenu($xml, $callback, 1, 'treeview-menu', 'treeview', '');
-                $menu->class = 'sidebar-menu';
-                $menu->id    = 'side-menu';
-                $menu->show();
-                $menu_string = ob_get_clean();
-                return $menu_string;
-            break;
+                    ob_start();
+                    $xml = new SimpleXMLElement(file_get_contents($file));
+                    $menu = new TMenu($xml, null, 1, 'treeview-menu', 'treeview', '');
+                    $menu->class = 'sidebar-menu';
+                    $menu->id    = 'side-menu';
+                    $menu->show();
+                    $menu_string = ob_get_clean();
+                    return $menu_string;
+                    break;  
 ```
+
 
 ### Etapa 03
 Edite o arquivo `<SISTEMA>/index.php` incluido as linhas abaixo:
@@ -82,7 +89,7 @@ if ( TSession::getValue('logged') ){
     $menu    = AdiantiMenuBuilder::parse('menu.xml', $theme);
     $content = str_replace('{MENU}', $menu, $content);
 
-    //Novas linhas para Theme3_v4
+    //Novas linhas para Theme3_v5
     $system_version = $ini['system']['version'];
     $head_title  = $ini['system']['head_title'].' - v'.$system_version;
     $content     = str_replace('{head_title}', $head_title, $content);
@@ -97,7 +104,7 @@ if ( TSession::getValue('logged') ){
         $menu    = AdiantiMenuBuilder::parse('menu-public.xml', $theme);
         $content = str_replace('{MENU}', $menu, $content);
 
-        //Novas linhas para Theme3_v4
+        //Novas linhas para Theme3_v5
         $system_version = $ini['system']['version'];
         $head_title  = $ini['system']['head_title'].' - v'.$system_version;
         $content     = str_replace('{head_title}', $head_title, $content);
@@ -108,7 +115,7 @@ if ( TSession::getValue('logged') ){
     }else{
         $content = file_get_contents("app/templates/{$theme}/login.html");
 
-        //Novas linhas para Theme3_v4
+        //Novas linhas para Theme3_v5
         $system_version = $ini['system']['version'];
         $head_title  = $ini['system']['head_title'].' - v'.$system_version;
         $content     = str_replace('{head_title}', $head_title, $content);
