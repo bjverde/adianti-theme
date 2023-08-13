@@ -56,11 +56,42 @@ $menu->style = 'overflow: hidden; width: auto;';
 Edite o arquivo `<SISTEMA>/index.php` incluido as linhas abaixo:
 
 ```php
-$system_version = $ini['system']['version'];
-$head_title  = $ini['system']['head_title'].' - v'.$system_version;
-$content     = str_replace('{head_title}', $head_title, $content);
-$content     = str_replace('{system_version}', $system_version, $content);
-$content     = str_replace('{logo-mini}', $ini['general']['application'], $content);
-$content     = str_replace('{logo-lg}', $ini['system']['logo-lg'], $content);
-$content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'], $content);
+if ( TSession::getValue('logged') ){
+    $content = file_get_contents("app/templates/{$theme}/layout.html");
+    $menu    = AdiantiMenuBuilder::parse('menu.xml', $theme);
+    $content = str_replace('{MENU}', $menu, $content);
+
+    //Novas linhas para Theme3_v5
+    $system_version = $ini['system']['system_version'];
+    $head_title  = $ini['system']['head_title'].' - v'.$system_version;
+    $content     = str_replace('{head_title}', $head_title, $content);
+    $content     = str_replace('{system_version}', $system_version, $content);
+    $content     = str_replace('{logo-mini}', $ini['general']['application'], $content);
+    $content     = str_replace('{logo-lg}', $ini['system']['logo-lg'], $content);
+    $content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'], $content);
+}else{
+    if (isset($ini['general']['public_view']) && $ini['general']['public_view'] == '1')
+    {
+        $content = file_get_contents("app/templates/{$theme}/public.html");
+        $menu    = AdiantiMenuBuilder::parse('menu-public.xml', $theme);
+        $content = str_replace('{MENU}', $menu, $content);
+
+        //Novas linhas para Theme3_v5
+        $system_version = $ini['system']['system_version'];
+        $head_title  = $ini['system']['head_title'].' - v'.$system_version;
+        $content     = str_replace('{head_title}', $head_title, $content);
+        $content     = str_replace('{system_version}', $system_version, $content);
+        $content     = str_replace('{logo-mini}', $ini['general']['application'], $content);
+        $content     = str_replace('{logo-lg}', $ini['system']['logo-lg'], $content);
+        $content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'], $content);
+    }else{
+        $content = file_get_contents("app/templates/{$theme}/login.html");
+
+        //Novas linhas para Theme3_v5
+        $system_version = $ini['system']['system_version'];
+        $head_title  = $ini['system']['head_title'].' - v'.$system_version;
+        $content     = str_replace('{head_title}', $head_title, $content);
+        $content     = str_replace('{login-link}', $ini['system']['login-link'], $content);
+    }
+}
 ```
