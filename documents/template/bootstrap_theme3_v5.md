@@ -66,20 +66,22 @@ login-link = http://wwww.meusite.com.br
 ```
 
 ### Parte 02
-Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linhas abaixo. 
+Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` alterando nas linhas
 ```php
-            case 'theme3_v5':
-                    ob_start();
-                    $xml = new SimpleXMLElement(file_get_contents($file));
-                    $menu = new TMenu($xml, null, 1, 'treeview-menu', 'treeview', '');
-                    $menu->class = 'sidebar-menu';
-                    $menu->id    = 'side-menu';
-                    $menu->show();
-                    $menu_string = ob_get_clean();
-                    return $menu_string;
-                    break;  
+            case 'theme3':
+                ob_start();
+                $callback = array('SystemPermission', 'checkPermission');
+                $xml = new SimpleXMLElement(file_get_contents($file));
 ```
 
+incluido theme3_v5 logo abaixo theme3, ficando como o exemplo abaixo
+```php
+            case 'theme3':
+            case 'theme3_v5':
+                ob_start();
+                $callback = array('SystemPermission', 'checkPermission');
+                $xml = new SimpleXMLElement(file_get_contents($file));
+```
 
 ### Etapa 03
 Edite o arquivo `<SISTEMA>/index.php` incluido as linhas abaixo:
