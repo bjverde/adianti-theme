@@ -72,7 +72,7 @@ Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` incluido as linh
 Edite o arquivo `<SISTEMA>/index.php` incluido as linhas abaixo:
 
 ```php
-$system_version = $ini['system']['version'];
+$system_version = $ini['system']['system_version'];
 $head_title  = $ini['system']['head_title'].' - v'.$system_version;
 $content     = str_replace('{head_title}', $head_title, $content);
 $content     = str_replace('{system_version}', $system_version, $content);
