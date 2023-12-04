@@ -16,6 +16,7 @@ Temas para apresentação do [Adianti FrameWork 7.5.1b](https://www.adianti.com.
 * Arquivo de `libraries.html` conforme Adianti 7.5.1b
 * Arquivo favicon.png
 * Arquivo de `layout.html` alterado removendo `layout-boxed` para ocupar toda area
+* [Houver grid amarelo](https://github.com/bjverde/adianti-theme/issues/23)
 
 ## Telas e suas alterações
 Locais das alterações

@@ -20,6 +20,7 @@ Tema baseado no [theme3_v5](../framework_puro.md#Bootstrap) para o FrameWork pur
 1. Arquivo: `login.html` - Title do HEAD alterado conforme novos parametos `{head_title}` e `{system_version}` no `application.ini`.
 1. Arquivo: `public.html` - Inclusão do nome do sistema de forma customizada `{logo-lg}` ou `{logo-mini}` no `application.ini`.
 1. Arquivo: `public.html` - Title do HEAD alterado conforme novos parametos `{head_title}` e `{system_version}` no `application.ini`.
+1. [Houver grid amarelo](https://github.com/bjverde/adianti-theme/issues/23)
 
 
 ## Telas e suas alterações
