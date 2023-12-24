@@ -5,7 +5,7 @@ Temas para apresentação do [Adianti FrameWork 7.0](https://www.adianti.com.br/
 Temas baseado na aparecem padrão do Bootstrap
 * [Boostrap Theme_formdin](framework_puro/bootstrap_theme_formdin.md), tema com menu horizontal e baseado no tema classico do FormDin 4
 * [Boostrap Theme_formdinv](framework_puro/bootstrap_theme_formdinv.md), tema com menu vertical e baseado no tema classico do FormDin 4
-* [theme3_v5](framework_puro/bootstrap_theme3_v5.md)
+* [theme3_v5](framework_puro/bootstrap_theme3_v5.md)  para Adianti 7.6.0
 
 Ideia geral um Tema BootStrap
 ![theme_bootstrap](img/theme_bootstrap.png)
@@ -13,4 +13,4 @@ Ideia geral um Tema BootStrap
 ## Material
 Temas baseado na aparecem Material da google, são temas Bootstrap porém com o lock en feel diferente.
 
-* [theme4_v5](framework_puro/bootstrap_theme4_v5.md)
+* [theme4_v5](framework_puro/bootstrap_theme4_v5.md)  para Adianti 7.6.0
