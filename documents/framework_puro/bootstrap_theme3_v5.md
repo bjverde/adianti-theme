@@ -1,5 +1,5 @@
 # Temas para o FrameWork Puro
-Temas para apresentação do [Adianti FrameWork 7.5.1b](https://www.adianti.com.br/) baseado na aparecem padrão d BootStrap
+Temas para apresentação do [Adianti FrameWork 7.6.0](https://adiantiframework.com.br/) baseado na aparencia padrão do BootStrap
 
 * [<- voltar para lista de temas BootStrap](../framework_puro.md)
 * [<- voltar para index](../../README.md)

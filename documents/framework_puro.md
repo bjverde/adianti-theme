@@ -11,6 +11,6 @@ Ideia geral um Tema BootStrap
 ![theme_bootstrap](img/theme_bootstrap.png)
 
 ## Material
-Temas baseado na aparecem Material da google, são temas Bootstrap porém com o lock en feel diferente.
+Temas baseado na aparencia Material da google, são temas Bootstrap porém com o lock en feel diferente.
 
 * [theme4_v5](framework_puro/bootstrap_theme4_v5.md)  para Adianti 7.6.0
