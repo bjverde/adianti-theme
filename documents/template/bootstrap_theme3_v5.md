@@ -1,5 +1,5 @@
 # Temas para o Template
-Temas para apresentação do template [Adianti FrameWork 7.5.1](https://www.adianti.com.br/) baseado na aparecem padrão d BootStrap
+Temas para apresentação do template [Adianti FrameWork 7.6.0](https://adiantiframework.com.br/) baseado na aparecem padrão d BootStrap
 
 * [<- voltar para lista de temas BootStrap](../template.md)
 * [<- voltar para index](../../README.md)
