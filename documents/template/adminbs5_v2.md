@@ -1,25 +1,19 @@
 # Temas para o Template
-Temas para apresentação do template [Adianti FrameWork 7.6.0](https://adiantiframework.com.br/) baseado na aparecem padrão d BootStrap
-
 * [<- voltar para lista de temas BootStrap](../template.md)
 * [<- voltar para index](../../README.md)
 
 
-# Theme3_v5
-Tema baseado no [theme3_v5](../framework_puro.md#Bootstrap) para o FrameWork puro.
+Temas para apresentação do template [Adianti FrameWork 8.0.0](https://adiantiframework.com.br/)
 
-*Quais são as diferenças do theme 3 do Adianti ?*.
-1. Inclusão dos arquivos das fontes MaterialIcons e source-code-pro assim não precisa de internet para baixar as fontes. 
-1. Arquivo: `layout.html` - retirada do `maximum-scale=1, user-scalable=no` da `viewport`. Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários.
-1. Arquivo: `layout.html` - Inclusão do nome do sistema de forma customizada `{logo-lg}` ou `{logo-mini}` no `application.ini`.
-1. Arquivo: `layout.html` - Inclusão da versão do sistema `{system_version}` de forma customizada no `application.ini`.
-1. Arquivo: `layout.html` - Title do HEAD alterado conforme novos parametos `{head_title}` e `{system_version}` no `application.ini`.
-1. Arquivo: `layout.html` - Inclusão favicon.png
-1. Arquivo: `libraries.html` - conforme Adianti 7.5.1b
-1. Arquivo: `login.html` - Inclusão do nome do sistema de forma customizada `{logo-lg}` ou `{logo-mini}` no `application.ini`.
-1. Arquivo: `login.html` - Title do HEAD alterado conforme novos parametos `{head_title}` e `{system_version}` no `application.ini`.
-1. Arquivo: `public.html` - Inclusão do nome do sistema de forma customizada `{logo-lg}` ou `{logo-mini}` no `application.ini`.
-1. Arquivo: `public.html` - Title do HEAD alterado conforme novos parametos `{head_title}` e `{system_version}` no `application.ini`.
+*Quais são as diferenças do tema padrão ?*.
+
+# Permitindo ZOOM
+Removendo `maximum-scale=1, user-scalable=no` - Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários.
+1. Arquivo: `layout-basic.html`
+1. Arquivo: `layout.html`
+1. Arquivo: `login.html`
+1. Arquivo: `public.html`
+
 1. [Houver grid amarelo](https://github.com/bjverde/adianti-theme/issues/23)
 1. [Campo com resize](https://github.com/bjverde/adianti-theme/issues/22)
 
