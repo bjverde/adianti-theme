@@ -24,9 +24,12 @@ Removendo `maximum-scale=1, user-scalable=no` - Sem esse parâmetro no celular o
 
 # Mudanças visual
 Tema escuro houver com amarelo
+
 ![adminbs5_v2](../img/template_800_drak_tabela.png)
 
+
 Tema claro houver com amarelo
+
 ![adminbs5_v2](../img/template_800_light_tabela.png)
 
 
