@@ -7,15 +7,20 @@ Temas para apresentação do template [Adianti FrameWork 8.0.0](https://adiantif
 
 *Quais são as diferenças do tema padrão ?*.
 
-# Permitindo ZOOM
-Removendo `maximum-scale=1, user-scalable=no` - Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários.
+# Malhorias
+
+## Zoom no celular
+Removendo `maximum-scale=1, user-scalable=no` - Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários. Abaixo de lista de arquivos:
 1. Arquivo: `layout-basic.html`
 1. Arquivo: `layout.html`
 1. Arquivo: `login.html`
 1. Arquivo: `public.html`
 
-1. [Houver grid amarelo](https://github.com/bjverde/adianti-theme/issues/23)
-1. [Campo com resize](https://github.com/bjverde/adianti-theme/issues/22)
+## Outras melhorias
+1. [Bug versão manifest](https://github.com/bjverde/adianti-theme/issues/30)
+1. [Houver grid amarelo](https://github.com/bjverde/adianti-theme/commit/ef81ef52021f1b6abbb32fd6291201e738c03dc8)
+1. [Permite selecionar Label](https://github.com/bjverde/adianti-theme/commit/ef81ef52021f1b6abbb32fd6291201e738c03dc8)
+
 
 
 ## Telas e suas alterações
