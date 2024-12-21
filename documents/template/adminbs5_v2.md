@@ -45,30 +45,23 @@ altere o valor `theme = <NOME ATUAL>` para `theme = adminbs5_v2`
 Incluir uma nova seção com as informações abaixo
 
 ```ini
-[system]
-system_version = 2.0.0
-head_title = Sistema de Exemplo
-logo-lg = Exemplo
-logo-link-class = 'SystemAboutView'
-login-link = http://wwww.meusite.com.br
+    'system' => [
+        'system_version' => '2.0.0'
+    ],
 ```
 
 ## Parte 02
 Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` alterando nas linhas
 ```php
-            case 'theme3':
-                ob_start();
-                $callback = array('SystemPermission', 'checkPermission');
-                $xml = new SimpleXMLElement(file_get_contents($file));
+            case 'adminbs5':
+                $xml  = new SimpleXMLElement(file_get_contents($file));
 ```
 
-incluido theme3_v5 logo abaixo theme3, ficando como o exemplo abaixo
+incluido adminbs5_v2 logo abaixo adminbs5, ficando como o exemplo abaixo
 ```php
-            case 'theme3':
-            case 'theme3_v5':
-                ob_start();
-                $callback = array('SystemPermission', 'checkPermission');
-                $xml = new SimpleXMLElement(file_get_contents($file));
+            case 'adminbs5':
+            case 'adminbs5_v2':
+                $xml  = new SimpleXMLElement(file_get_contents($file));
 ```
 
 ## Parte 03
