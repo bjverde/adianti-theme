@@ -22,39 +22,24 @@ Removendo `maximum-scale=1, user-scalable=no` - Sem esse parâmetro no celular o
 1. [Permite selecionar Label](https://github.com/bjverde/adianti-theme/commit/ef81ef52021f1b6abbb32fd6291201e738c03dc8)
 
 
+# Mudanças visual
+Tema escuro houver com amarelo
+![adminbs5_v2](../img/template_800_drak_tabela.png)
 
-## Telas e suas alterações
-Alterações na tela de login
-![Theme3_v4_login](../img/template_theme3_v3_login.png)
+Tema claro houver com amarelo
+![adminbs5_v2](../img/template_800_light_tabela.png)
 
-Alterações nas telas publicas
-![Theme3_v4_public](../img/template_theme3_v3_public.png)
-
-Alterações nas telas Principais
-![Theme3_v4_layout](../img/template_theme3_v3_layout.png)
-
-Mostrando o numero da versão, no rodape
-![template_theme3_v3_layout_rodape](../img/template_theme3_v3_layout_rodape.png)
-
-
-
-## Origem das fontes MaterialIcons
-* MaterialIcons - https://github.com/google/material-design-icons/releases
-* source-code-pro - https://github.com/adobe-fonts/source-code-pro
-* Artigo do StackOverFlow que ajudou corrigir os temas - https://stackoverflow.com/questions/37270835/how-to-host-material-icons-offline
-
-
-## Para usar o theme3_v5
-1. copie a pasta pasta `theme3_v5` dentro de framework_puro cole em `<SISTEMA>/app/templates`
+# Como instalar o tema adminbs5_v2
+1. copie a pasta pasta `adminbs5_v2` dentro de framework_puro cole em `<SISTEMA>/app/templates`
 1. Excute as partes abaixo
 
-### Parte 01 
+## Parte 01 
 Editar o arquivo `<SISTEMA>/app/config/application.ini`
 
-#### alterar o tema padrão
-altere o valor `theme = <NOME ATUAL>` para `theme = theme3_v5`
+### alterar o tema padrão
+altere o valor `theme = <NOME ATUAL>` para `theme = adminbs5_v2`
 
-#### incluindo seção system 
+### incluindo seção system 
 Incluir uma nova seção com as informações abaixo
 
 ```ini
@@ -66,7 +51,7 @@ logo-link-class = 'SystemAboutView'
 login-link = http://wwww.meusite.com.br
 ```
 
-### Parte 02
+## Parte 02
 Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` alterando nas linhas
 ```php
             case 'theme3':
@@ -84,7 +69,7 @@ incluido theme3_v5 logo abaixo theme3, ficando como o exemplo abaixo
                 $xml = new SimpleXMLElement(file_get_contents($file));
 ```
 
-### Etapa 03
+## Parte 03
 Edite o arquivo `<SISTEMA>/index.php` incluido as linhas abaixo:
 ```php
 if ( TSession::getValue('logged') ){
