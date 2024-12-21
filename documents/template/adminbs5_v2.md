@@ -5,9 +5,9 @@
 
 Temas para apresentação do template [Adianti FrameWork 8.0.0](https://adiantiframework.com.br/)
 
-*Quais são as diferenças do tema padrão ?*.
+# Melhorias
 
-# Malhorias
+*Quais são as diferenças do tema padrão ?*
 
 ## Zoom no celular
 Removendo `maximum-scale=1, user-scalable=no` - Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários. Abaixo de lista de arquivos:
@@ -29,12 +29,14 @@ Tema escuro houver com amarelo
 Tema claro houver com amarelo
 ![adminbs5_v2](../img/template_800_light_tabela.png)
 
+
+
 # Como instalar o tema adminbs5_v2
-1. copie a pasta pasta `adminbs5_v2` dentro de framework_puro cole em `<SISTEMA>/app/templates`
+1. copie a pasta pasta `adminbs5_v2` dentro de adianti template cole em `<SISTEMA>/app/templates`
 1. Excute as partes abaixo
 
 ## Parte 01 
-Editar o arquivo `<SISTEMA>/app/config/application.ini`
+Editar o arquivo `<SISTEMA>/app/config/application.php`
 
 ### alterar o tema padrão
 altere o valor `theme = <NOME ATUAL>` para `theme = adminbs5_v2`
