@@ -1,4 +1,4 @@
-# Temas para o Template
+# Temas para o FrameWork Puro
 * [<- voltar para lista de temas BootStrap](../framework_puro.md)
 * [<- voltar para index](../../README.md)
 
