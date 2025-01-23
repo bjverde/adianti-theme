@@ -1,4 +1,6 @@
 # Temas para o Template
+* [<- voltar para index](../../README.md)
+
 Temas para apresentação do template [Adianti FrameWork 7.6.0](https://www.adianti.com.br/)
 
 ## Bootstrap
