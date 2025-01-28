@@ -1,3 +1,111 @@
+:root {
+    --cor-vermelho-mpdft: #b80c1f;
+    --cor-vermelho-mpdft-transparente:#b80c1f63;
+    --cor-vermelho: #d00d23;
+    --cor-texto-claro: #ffffff;
+    --cinza_escuro:#5b5b5b;
+}
+
+#app_header
+{
+	display :flex;
+    margin  :auto auto;
+    height  :40px;
+    justify-content: start;
+}
+
+#app_header_fd5{
+    display   :table;
+	width	  :100%;
+	border	  :0px;
+	padding	  :0px;
+	margin	  :0px;
+    top       :0px;
+    bottom    :auto;
+    left      :0px;
+    right     :0px;	
+	font-family: arial, times new roman;
+}
+
+#app_header_logo
+{
+	display     :table-cell;
+	width       :20%;
+	font-size	:14px;
+	font-weight	:bold;
+	text-align	:center;
+    vertical-align: middle;
+}
+#app_header_logo img
+{
+	max-width   : 100%;
+	max-height  : 100%;
+	border      : none;
+	padding     : 0px;
+    display     : block;
+    margin      : auto auto;
+}
+#app_header_title
+{	
+	display     : table-cell;	
+	width       : 60%;
+	vertical-align: top;
+}
+#app_header_title_main
+{
+	background	:transparent;
+	font-size	:24px;
+	font-weight	:bold;
+	text-align	:center;
+}
+#app_header_subtitle
+{
+	background	:transparent;
+	font-size	:15px;
+	font-weight	:bold;
+	text-align	:center;
+}
+#app_header_login
+{
+	display     : table-cell;
+  	vertical-align: middle;
+	width       :20%;
+	font-size	:12px;
+	text-align	:center;
+}
+
+@media (max-width: 575.98px) { 
+	#app_header_left img
+    {
+        max-height: 30px;
+    }
+    #app_header_right img
+    {
+        max-height: 25px;
+    }
+    #app_header_center
+    {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+	#app_header_left img
+    {
+        max-height: 37px;
+    }
+    #app_header_right img
+    {
+        max-height: 32px;
+    }
+    #app_header_center
+    {
+        font-size: 1.4rem;
+    }
+}
+
+
 [data-bs-theme=light] .table-hover > tbody > tr:hover > * {
     --bs-table-color-state: var(--bs-table-hover-color);
     --bs-table-bg-state: rgb(255, 249, 153);
@@ -7,5 +115,7 @@
     --bs-table-bg-state: rgb(255, 249, 153);
 }
 label {
-	user-select:text;
+	-moz-user-select: unset;
+	-webkit-user-select: unset;
+	user-select: unset;
 }
