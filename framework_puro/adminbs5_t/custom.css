@@ -1,6 +1,6 @@
 :root {
     --cor-vermelho-mpdft: #b80c1f;
-    --cor-vermelho-mpdft-transparente:#b80c1f63;
+    --cor-vermelho-mpdft-transparente:#8b0f1df2;
     --cor-vermelho: #d00d23;
     --cor-texto-claro: #ffffff;
     --cinza_escuro:#5b5b5b;
@@ -9,6 +9,13 @@
 
 #app_header
 {
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0; /* Posiciona no topo da página */
+    left: 0;
+    width: 100%; /* Faz o cabeçalho ocupar toda a largura */
+    z-index: 1000; /* Garante que o cabeçalho fique sobre os outros elementos */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Pequena sombra para destaque */
+
 	display :flex;
     margin  :auto auto;
     height  :var(--altura-header);
@@ -88,6 +95,10 @@
     height: 100%; /* Preenche a altura do container */
     width: auto; /* Mantém a proporção da imagem */
     max-height: var(--altura-header); /* Garante que a imagem não ultrapasse a altura */
+}
+
+.wrapper {
+    margin-top: var(--altura-header); /* Evita que o conteúdo fique escondido atrás do cabeçalho fixo */
 }
 
 @media (max-width: 575.98px) { 
