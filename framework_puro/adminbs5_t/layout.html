@@ -41,6 +41,9 @@
         <div id="app_header_fd5">
             <div id="app_header_left">
                 <img src="favicon.png" id="img_header_logo" alt="{Logo}">
+                <button class="btn superlight" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
             <div id="app_header_title">
                 <div id="app_header_title_main">
@@ -60,15 +63,7 @@
         <aside id="sidebar" class="js-sidebar thin-scroll">
             <!-- Content For Sidebar -->
             <div class="h-100">
-                <span class="sidebar-system-name border-bottom">
-                    <span class="sidebar-logo" style="margin-left: 0;">
-                        <img style="width:75%;margin-top:-5px" src="favicon.png">
-                    </span>
-                    <span class="name">
-                        {title}
-                    </span>
-                </span>
-                
+
                 <span class="sidebar-menu-title">
                     <span class="name">MENU</span>
                     <div id="has_menu_mode_switch" class="form-check form-switch" title="_t{Dark mode}" style="display: inline;position: absolute;right: 0;margin-right: 15px; display:none">
@@ -82,18 +77,6 @@
             </div>
         </aside>
         <div class="main">
-            <nav class="navbar navbar-expand px-3 border-bottom">
-                <button class="btn superlight" id="sidebar-toggle" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse navbar">
-                    <div class="nav-item" style="float:left">
-                        {MENUTOP}
-                    </div>
-                    <ul id="navbar-wrapper" class="navbar-nav" style="margin-right:10px">
-                    </ul>
-                </div>
-            </nav>
             <main class="content px-3 py-2">
                 <div class="container-fluid">
                     <div id="adianti_div_content"></div>
