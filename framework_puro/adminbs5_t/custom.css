@@ -4,7 +4,7 @@
     --cor-vermelho: #d00d23;
     --cor-texto-claro: #ffffff;
     --cinza_escuro:#5b5b5b;
-    --altura-header:40px;
+    --altura-header:50px;
 }
 
 #app_header
@@ -13,6 +13,8 @@
     margin  :auto auto;
     height  :var(--altura-header);
     justify-content: start;
+    background-color:var(--cor-vermelho-mpdft);
+    color: var(--cor-texto-claro);
 }
 
 #app_header_fd5{
