@@ -24,77 +24,49 @@
     color: var(--cor-texto-claro);
 }
 
-#app_header_fd5{
-    display   :table;
-	width	  :100%;
-	border	  :0px;
-	padding	  :0px;
-	margin	  :0px;
-    top       :0px;
-    bottom    :auto;
-    left      :0px;
-    right     :0px;	
-	font-family: arial, times new roman;
-}
-
 #app_header_left {
     display: flex; /* Usa flexbox para alinhar os elementos */
-    justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
+    justify-content: flex-start;
     height: var(--altura-header); /* Define a altura */
+    max-width: var(--ad-menu-size); /* Garante que não ultrapasse a largura do menu lateral */
+    width: 100%; /* Ajustável conforme necessário */
+    vertical-align: middle;
+    margin      : auto auto;
 }
 
 #img_header_logo {
     height: 100%; /* Preenche a altura do container */
     width: auto; /* Mantém a proporção da imagem */
     max-height: var(--altura-header); /* Garante que a imagem não ultrapasse a altura */
-}
-
-#app_header_logo
-{
-	display     :table-cell;
-	width       :20%;
-	font-size	:14px;
-	font-weight	:bold;
-	text-align	:center;
-    vertical-align: middle;
-}
-#app_header_logo img
-{
-	max-width   : 100%;
-	max-height  : 100%;
-	border      : none;
-	padding     : 0px;
-    display     : block;
     margin      : auto auto;
 }
-#app_header_title
-{	
-	display     : table-cell;	
-	width       : 60%;
-	vertical-align: top;
+#app_header_center {
+    flex: 1; /* Ocupa o espaço disponível */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:var(--cinza_escuro);
 }
-#app_header_title_main
-{
+#app_header_title_main {
 	background	:transparent;
 	font-size	:24px;
 	font-weight	:bold;
 	text-align	:center;
 }
-#app_header_subtitle
-{
+#app_header_subtitle {
 	background	:transparent;
 	font-size	:15px;
 	font-weight	:bold;
 	text-align	:center;
 }
-#app_header_login
-{
-	display     : table-cell;
-  	vertical-align: middle;
-	width       :20%;
-	font-size	:12px;
-	text-align	:center;
+#app_header_right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    padding-right: 15px;
 }
 
 
