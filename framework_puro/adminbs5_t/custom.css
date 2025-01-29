@@ -41,6 +41,7 @@
     max-height: var(--altura-header); /* Garante que a imagem não ultrapasse a altura */
     margin      : auto auto;
 }
+
 #app_header_center {
     flex: 1; /* Ocupa o espaço disponível */
     display: flex;
@@ -48,6 +49,14 @@
     justify-content: center;
     text-align: center;
     background-color:var(--cinza_escuro);
+}
+#app_header_button {
+    justify-content: flex-start;
+    width: 3%;
+}
+#app_header_title {
+    flex: 1; /* Ocupa o espaço disponível */
+    justify-content: flex-end;
 }
 #app_header_title_main {
 	background	:transparent;
@@ -61,6 +70,7 @@
 	font-weight	:bold;
 	text-align	:center;
 }
+
 #app_header_right{
     display: flex;
     align-items: center;
