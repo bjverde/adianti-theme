@@ -56,7 +56,7 @@
 }
 #app_header_title {
     flex: 1; /* Ocupa o espaço disponível */
-    max-width: 80%;
+    max-width: 97%;
     justify-content: flex-end;
 }
 #app_header_title_main {
