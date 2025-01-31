@@ -9,6 +9,9 @@ Temas para apresentação do FrameWork Puro [Adianti 8.0.0](https://adiantiframe
 
 *Quais são as diferenças do tema padrão ?*
 
+## Barra fixa
+
+
 ## Zoom no celular
 Removendo `maximum-scale=1, user-scalable=no` - Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários. Abaixo de lista de arquivos:
 1. Arquivo: `layout.html`
@@ -95,3 +98,10 @@ $content     = str_replace('{HEAD}', $css.$js, $content);
 
 echo $content;
 ```
+# Exemplo do sistema tema rodando
+
+![adminbs5_v2](../img/adminbs5_t-01.png)
+
+![adminbs5_v2](../img/adminbs5_t-02.png)
+
+![adminbs5_v2](../img/adminbs5_t-03.png)
