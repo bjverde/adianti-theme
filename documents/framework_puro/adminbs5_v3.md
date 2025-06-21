@@ -15,7 +15,7 @@ Removendo `maximum-scale=1, user-scalable=no` - Sem esse parâmetro no celular o
 1. Arquivo: `login.html`
 
 ## Outras melhorias
-1. [Bug versão manifest](https://github.com/bjverde/adianti-theme/issues/32)
+1. Bug versão manifest
 1. Permitir scalable
 1. Houver grid amarelo
 1. Permite selecionar Label
@@ -33,8 +33,8 @@ Tema claro houver com amarelo
 
 
 
-# Como instalar o tema adminbs5_v2
-1. copie a pasta pasta `adminbs5_v2` dentro de adianti template cole em `<SISTEMA>/app/templates`
+# Como instalar o tema adminbs5_v3
+1. copie a pasta pasta `adminbs5_v3` dentro de adianti template cole em `<SISTEMA>/app/templates`
 1. Excute as partes abaixo
 
 ## Parte 01 
@@ -62,11 +62,22 @@ Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` alterando nas li
 incluido adminbs5_v2 logo abaixo adminbs5, ficando como o exemplo abaixo
 ```php
             case 'adminbs5':
-            case 'adminbs5_v2':
+            case 'adminbs5_v3':
                 $xml  = new SimpleXMLElement(file_get_contents($file));
 ```
 
 ## Parte 03
+Edite o arquivo `<SISTEMA>/app/config/application.php` incluindo os arquivos abaixo
+```php
+    'system' =>  [
+        'system_version' => '8.0.0',
+        'system_name_sub'=> 'Fork do Adianti FrameWork',
+        'adianti_min_version'=> '8.0.0',
+        'formdin_min_version'=> '5.4.0',
+    ],
+```
+
+## Parte 04
 Edite o arquivo `<SISTEMA>/index.php` incluido as linhas abaixo:
 ```php
 if ( TSession::getValue('logged') ){
