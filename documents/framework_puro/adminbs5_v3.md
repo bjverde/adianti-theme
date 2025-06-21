@@ -70,7 +70,7 @@ incluido adminbs5_v2 logo abaixo adminbs5, ficando como o exemplo abaixo
 Edite o arquivo `<SISTEMA>/app/config/application.php` incluindo os arquivos abaixo
 ```php
     'system' =>  [
-        'system_version' => '8.0.0',
+        'system_version' => '1.0.0',
         'system_name_sub'=> 'Fork do Adianti FrameWork',
         'adianti_min_version'=> '8.0.0',
         'formdin_min_version'=> '5.4.0',
