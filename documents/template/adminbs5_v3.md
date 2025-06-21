@@ -11,6 +11,7 @@ Temas para apresentação do template [Adianti FrameWork 8.1.0](https://adiantif
 
 ## Zoom no celular
 Removendo `maximum-scale=1, user-scalable=no` - Sem esse parâmetro no celular o usuário consegue fazer o movimento de pinça para aumentar ou diminuir o zoom, o que aumenta acessebilidade para os usuários. Abaixo de lista de arquivos:
+1. Arquivo: `iframe.html`
 1. Arquivo: `layout-basic.html`
 1. Arquivo: `layout.html`
 1. Arquivo: `login.html`
