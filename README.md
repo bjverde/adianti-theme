@@ -7,7 +7,7 @@ Os temas foram separados em duas categorias no momento:
 * [Temas para o Template](documents/template.md)
 
 
-# Adianti 8.0.0
+# Adianti 8.0.0 ou superior
 No Adianti 8.0.0 passou usar BootStarp 5 e tem apenas um tema padrão, Com algo semelhante ao [projeto Admin LTE](https://adminlte.io/)
 
 # Adianti 7.0 até 7.6 
