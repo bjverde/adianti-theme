@@ -54,10 +54,15 @@ Incluir uma nova seção com as informações abaixo
     'system' =>  [
         'system_version' => '1.0.0',
         'system_name_sub'=> 'Fork do Adianti FrameWork',
-        'adianti_min_version'=> '8.1.0',
+        'adianti_min_version'=> '8.0.0',
         'formdin_min_version'=> '5.4.0',
     ],
 ```
+Explicando os novos parâmetros:
+* system_version - é versão do seu sistema
+* system_name_sub - subtitulo do sistema, depende de alterar o layout para aparecer
+* adianti_min_version - versão mínima do Adianti Framework que o sistema precisa
+* formdin_min_version - versão mínima do FormDin que o sistema precisa
 
 ## Parte 02
 Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` alterando nas linhas
@@ -74,44 +79,26 @@ incluido adminbs5_v3 logo abaixo adminbs5, ficando como o exemplo abaixo
 ```
 
 ## Parte 03
-Edite o arquivo `<SISTEMA>/index.php` incluido as linhas abaixo:
+Edite o arquivo `<SISTEMA>/index.php` altere de 
+
 ```php
-if ( TSession::getValue('logged') ){
-    $content = file_get_contents("app/templates/{$theme}/layout.html");
-    $menu    = AdiantiMenuBuilder::parse('menu.xml', $theme);
-    $content = str_replace('{MENU}', $menu, $content);
+$content = ApplicationTranslator::translateTemplate($content);
+$content = AdiantiTemplateParser::parse($content);
+```
 
-    //Novas linhas para Theme3_v5
-    $system_version = $ini['system']['system_version'];
-    $head_title  = $ini['system']['head_title'].' - v'.$system_version;
-    $content     = str_replace('{head_title}', $head_title, $content);
-    $content     = str_replace('{system_version}', $system_version, $content);
-    $content     = str_replace('{logo-mini}', $ini['general']['application'], $content);
-    $content     = str_replace('{logo-lg}', $ini['system']['logo-lg'], $content);
-    $content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'], $content);
-}else{
-    if (isset($ini['general']['public_view']) && $ini['general']['public_view'] == '1')
-    {
-        $content = file_get_contents("app/templates/{$theme}/public.html");
-        $menu    = AdiantiMenuBuilder::parse('menu-public.xml', $theme);
-        $content = str_replace('{MENU}', $menu, $content);
+PARA
 
-        //Novas linhas para Theme3_v5
-        $system_version = $ini['system']['system_version'];
-        $head_title  = $ini['system']['head_title'].' - v'.$system_version;
-        $content     = str_replace('{head_title}', $head_title, $content);
-        $content     = str_replace('{system_version}', $system_version, $content);
-        $content     = str_replace('{logo-mini}', $ini['general']['application'], $content);
-        $content     = str_replace('{logo-lg}', $ini['system']['logo-lg'], $content);
-        $content     = str_replace('{logo-link-class}', $ini['system']['logo-link-class'], $content);
-    }else{
-        $content = file_get_contents("app/templates/{$theme}/login.html");
+```php
+//--- START: TEMA ADMINBS5_V3  ---------------------------------------------------------
+$system_version = $ini['system']['system_version'];
+$title       = $ini['general']['title'];
+$head_title  = $title.' - v'.$system_version;
 
-        //Novas linhas para Theme3_v5
-        $system_version = $ini['system']['system_version'];
-        $head_title  = $ini['system']['head_title'].' - v'.$system_version;
-        $content     = str_replace('{head_title}', $head_title, $content);
-        $content     = str_replace('{login-link}', $ini['system']['login-link'], $content);
-    }
-}
+$content = str_replace('{head_title}', $head_title, $content);
+$content = str_replace('{title}', $title, $content);
+$content = str_replace('{system_version}', $system_version, $content);
+//--- END: TEMA ADMINBS5_V3 ------------------------------------------------------------
+
+$content = ApplicationTranslator::translateTemplate($content);
+$content = AdiantiTemplateParser::parse($content);
 ```

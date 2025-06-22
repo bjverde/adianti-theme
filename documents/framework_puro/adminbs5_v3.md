@@ -41,34 +41,12 @@ Tema claro houver com amarelo
 Editar o arquivo `<SISTEMA>/app/config/application.php`
 
 ### alterar o tema padrão
-altere o valor `theme = <NOME ATUAL>` para `theme = adminbs5_v2`
+altere o valor `theme = <NOME ATUAL>` para `theme = adminbs5_v3`
 
 ### incluindo seção system 
 Incluir uma nova seção com as informações abaixo
 
 ```ini
-    'system' => [
-        'system_version' => '2.0.0'
-    ],
-```
-
-## Parte 02
-Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` alterando nas linhas
-```php
-            case 'adminbs5':
-                $xml  = new SimpleXMLElement(file_get_contents($file));
-```
-
-incluido adminbs5_v2 logo abaixo adminbs5, ficando como o exemplo abaixo
-```php
-            case 'adminbs5':
-            case 'adminbs5_v3':
-                $xml  = new SimpleXMLElement(file_get_contents($file));
-```
-
-## Parte 03
-Edite o arquivo `<SISTEMA>/app/config/application.php` incluindo uma nova seção ao final
-```php
     'system' =>  [
         'system_version' => '1.0.0',
         'system_name_sub'=> 'Fork do Adianti FrameWork',
@@ -82,7 +60,21 @@ Explicando os novos parâmetros:
 * adianti_min_version - versão mínima do Adianti Framework que o sistema precisa
 * formdin_min_version - versão mínima do FormDin que o sistema precisa
 
-## Parte 04
+## Parte 02
+Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` alterando nas linhas
+```php
+            case 'adminbs5':
+                $xml  = new SimpleXMLElement(file_get_contents($file));
+```
+
+incluido adminbs5_v3 logo abaixo adminbs5, ficando como o exemplo abaixo
+```php
+            case 'adminbs5':
+            case 'adminbs5_v3':
+                $xml  = new SimpleXMLElement(file_get_contents($file));
+```
+
+## Parte 03
 Edite o arquivo `<SISTEMA>/index.php` altere de 
 ```php
 $menu_string = AdiantiMenuBuilder::parse('menu.xml', $theme);
