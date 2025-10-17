@@ -1,3 +1,6 @@
 :root {
     --ad-menu-size: 360px;
 }
+label {
+	user-select:text;
+}
