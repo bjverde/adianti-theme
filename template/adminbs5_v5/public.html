@@ -9,7 +9,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="apple-touch-icon" sizes="180x180" href="app/images/icon.png">
-    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     
     {LIBRARIES}
@@ -91,6 +91,7 @@
                     <div class="row text-muted">
                         <div class="col-12 text-start">
                             <div style="text-align:right">
+                                {system_version}
                                 {MENUBOTTOM}
                                 <div id="has_main_mode_switch" class="form-check form-switch" title="_t{Dark mode}" style="margin-left: 10px;padding-top:5px;display:none">
                                     <input class="form-check-input" type="checkbox" role="switch" id="global_theme_switch" checked="" style="cursor:pointer" onclick="Template.toggleGlobalTheme(this)">
