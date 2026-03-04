@@ -37,15 +37,15 @@ Tema claro houver com amarelo
 
 
 
-# Como instalar o tema adminbs5_v3
-1. copie a pasta pasta `adminbs5_v3` dentro de adianti template cole em `<SISTEMA>/app/templates`
+# Como instalar o tema adminbs5_v6
+1. copie a pasta pasta `adminbs5_v6` dentro de adianti template cole em `<SISTEMA>/app/templates`
 1. Excute as partes abaixo
 
 ## Parte 01 
 Editar o arquivo `<SISTEMA>/app/config/application.php`
 
 ### alterar o tema padrão
-altere o valor `theme = <NOME ATUAL>` para `theme = adminbs5_v3`
+altere o valor `theme = <NOME ATUAL>` para `theme = adminbs5_v6`
 
 ### incluindo seção system 
 Incluir uma nova seção com as informações abaixo
