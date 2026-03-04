@@ -52,8 +52,8 @@ Incluir uma nova seção com as informações abaixo
     'system' =>  [
         'system_version' => '1.0.0',
         'system_name_sub'=> 'Fork do Adianti FrameWork',
-        'adianti_min_version'=> '8.3.0',
-        'formdin_min_version'=> '5.4.0',
+        'adianti_min_version'=> '8.4.0',
+        'formdin_min_version'=> '5.9.0',
     ],
 ```
 Explicando os novos parâmetros:
@@ -69,10 +69,10 @@ Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` alterando nas li
                 $xml  = new SimpleXMLElement(file_get_contents($file));
 ```
 
-incluido adminbs5_v5 logo abaixo adminbs5, ficando como o exemplo abaixo
+incluido adminbs5_v6 logo abaixo adminbs5, ficando como o exemplo abaixo
 ```php
             case 'adminbs5':
-            case 'adminbs5_v5':
+            case 'adminbs5_v6':
                 $xml  = new SimpleXMLElement(file_get_contents($file));
 ```
 
@@ -87,7 +87,7 @@ $content = AdiantiTemplateParser::parse($content);
 PARA
 
 ```php
-//--- START: TEMA ADMINBS5_V5  ---------------------------------------------------------
+//--- START: TEMA ADMINBS5_V6  ---------------------------------------------------------
 $system_version = $ini['system']['system_version'];
 $title       = $ini['general']['title'];
 $head_title  = $title.' - v'.$system_version;
@@ -95,7 +95,7 @@ $head_title  = $title.' - v'.$system_version;
 $content = str_replace('{head_title}', $head_title, $content);
 $content = str_replace('{title}', $title, $content);
 $content = str_replace('{system_version}', $system_version, $content);
-//--- END: TEMA ADMINBS5_V5 ------------------------------------------------------------
+//--- END: TEMA ADMINBS5_V6 ------------------------------------------------------------
 
 $content = ApplicationTranslator::translateTemplate($content);
 $content = AdiantiTemplateParser::parse($content);
