@@ -65,15 +65,18 @@ Explicando os novos parâmetros:
 ## Parte 02
 Edite o arquivo `<SISTEMA>/app/lib/menu/AdiantiMenuBuilder.php` alterando nas linhas
 ```php
-            case 'adminbs5':
-                $xml  = new SimpleXMLElement(file_get_contents($file));
+        if ($theme == 'adminbs5')
+        {
+            $xml  = new SimpleXMLElement(file_get_contents($file));
+            $menu = new TMenu($xml, self::CHECK_PERMISSION, 1, 'sidebar-dropdown list-unstyled collapse', 'sidebar-item', 'sidebar-link collapsed', [__class__, 'prepareItem']);
 ```
 
 incluido adminbs5_v6 logo abaixo adminbs5, ficando como o exemplo abaixo
 ```php
-            case 'adminbs5':
-            case 'adminbs5_v6':
-                $xml  = new SimpleXMLElement(file_get_contents($file));
+        $listTemas = array('adminbs5', 'adminbs5_v6');
+        if ( in_array($theme, $listTemas) ) {
+            $xml  = new SimpleXMLElement(file_get_contents($file));
+            $menu = new TMenu($xml, self::CHECK_PERMISSION, 1, 'sidebar-dropdown list-unstyled collapse', 'sidebar-item', 'sidebar-link collapsed', [__class__, 'prepareItem']);
 ```
 
 ## Parte 03
