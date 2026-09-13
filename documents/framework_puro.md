@@ -2,6 +2,9 @@
 [<- voltar para index](../README.md)
 
 
+Tema padrão do Adianti FrameWork 8.6.0 
+* [adminbs5_v7](framework_puro/adminbs5_v7.md), com melhorias
+
 Tema padrão do Adianti FrameWork 8.4.0 
 * [adminbs5_v6](framework_puro/adminbs5_v6.md), com melhorias
 
