@@ -3,7 +3,7 @@
 * [<- voltar para index](../../README.md)
 
 
-Temas para apresentação do template [Adianti FrameWork 8.4.0](https://adiantiframework.com.br/)
+Temas para apresentação do template [Adianti FrameWork 8.6.0](https://adiantiframework.com.br/)
 
 # Melhorias
 
@@ -52,7 +52,7 @@ Incluir uma nova seção com as informações abaixo
     'system' =>  [
         'system_version' => '1.0.0',
         'system_name_sub'=> 'Fork do Adianti FrameWork',
-        'adianti_min_version'=> '8.4.0',
+        'adianti_min_version'=> '8.6.0',
         'formdin_min_version'=> '5.9.0',
     ],
 ```
