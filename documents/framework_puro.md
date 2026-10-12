@@ -1,6 +1,8 @@
 # Temas para o FremeWork Puro
 [<- voltar para index](../README.md)
 
+Tema padrão do Adianti FrameWork 8.7.0 
+* [adminbs5_v8](framework_puro/adminbs5_v8.md), com melhorias
 
 Tema padrão do Adianti FrameWork 8.6.0 
 * [adminbs5_v7](framework_puro/adminbs5_v7.md), com melhorias
