@@ -1,6 +1,8 @@
 # Temas para o Template
 * [<- voltar para index](../README.md)
 
+[adminbs5_v8](template/adminbs5_v8.md), tema padrão do Adianti 8.7.0 com melhorias
+
 [adminbs5_v7](template/adminbs5_v7.md), tema padrão do Adianti 8.6.0 com melhorias
 
 [adminbs5_v6](template/adminbs5_v6.md), tema padrão do Adianti 8.4.0 com melhorias
