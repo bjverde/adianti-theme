@@ -1,3 +1,7 @@
+:root {
+    --ad-menu-size: 370px;
+}
+
 /* Houver amarelo nas tabelas  */
 [data-bs-theme=light] .table-hover>tbody>tr:hover>* {
     --bs-table-color-state: var(--bs-table-hover-color);
